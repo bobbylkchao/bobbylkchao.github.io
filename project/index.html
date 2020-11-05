@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+/////////////////////////////////////
+//       Bobby (LINGKAI) Chao      //
+//      Intermediate HTML5&CSS     //
+//           Final Project         //
+//             Nov.2020            //
+//       Instructor: B. Scott      //
+/////////////////////////////////////
+
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body{
+      font-family: 'Times New Roman';
+      background-color: #1f1f1f;
+      color: #e2b800;
+    }
+    
+    #wrapper{
+      width: 960px;
+      margin: 0 auto;
+    }
+    
+    /**
+        ---  Rules for header  ---  
+    **/
+    
+    header{
+      height: 137px;
+      line-height: 13;
+      vertical-align: middle;
+      text-align: center;
+      background-image: url("./assets/header-bg.png");
+      background-repeat: no-repeat;
+    }
+    
+    /**
+        ---  Rules for section  ---  
+    **/
+    section{
+      overflow: scroll;
+      /**Hide section's scrollbar but keep functionality**/
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    
+    /**Hide section's scrollbar but keep functionality**/
+    section::-webkit-scrollbar {
+      display: none;
+    }
+
+    section .floatLeft{
+      height: 550px;
+      max-height: 550px;
+      float: left;
+      background-image: url("./assets/center-left-bg.png");
+      background-repeat: no-repeat;
+    }
+    
+    section .floatLeft .content{
+      margin: 43% 10px 0 11%;
+    }
+    
+    section .floatRight{
+      height: 559px;
+      max-height: 559px;
+      float: right;
+      background-image: url("./assets/center-right-bg.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    
+    section .floatRight .content{
+      margin: 11% 25px 0 3%;
+    }
+    
+    #navList ul{
+      margin: 0;
+      padding: 0;
+    }
+    
+    #navList ul li{
+      list-style-type: none;
+    }
+    
+    #navList .nav-item{
+      position: relative;
+    }
+    
+    /** set nav-item margin-top, except first one **/
+    #navList .nav-item:nth-of-type(n+2){
+      margin-top: 20px;
+    }
+    
+    #navList .nav-item a{
+      display: block;
+      height: 34px;
+      text-decoration: none;
+      color: #e2b800;
+      background-image: url("./assets/menu-item-bg-normal.png");
+      background-repeat: no-repeat;
+      padding-left: 21%;
+      line-height: 1.9;
+    }
+    
+    #navList .nav-item a:hover{
+      background-image: url("./assets/menu-item-bg-hover.png");
+      background-repeat: no-repeat;
+    }
+    
+    #navList .nav-item a.active{
+      background-image: url("./assets/menu-item-bg-hover.png");
+      background-repeat: no-repeat;
+    }
+    
+    #navList .nav-item img{
+      position: absolute;
+      top: 2%;
+    }
+    
+    /**
+        --- Rules for form ---
+    **/
+    form label,legend{
+      font-family: "Philosopher";
+    }
+    
+    /**label style only for ele which class not is appearanceLabel**/
+    form label:not(.appearanceLabel){
+      font-family: "Philosopher";
+      color:#fff;
+      display: inline-block;
+      width: 100px;
+    }
+    
+    form label[class="appearanceLabel"]{
+      font-family: "Philosopher";
+      color:#fff;
+    }
+    
+    form legend{
+      border: 1px solid #e2b800;
+      padding: 5px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    
+    form fieldset{
+      border: 2px solid #727272;
+      border-radius: 5px;
+    }
+    
+    /**input style only for ele which class not is appearanceInput**/
+    form input:not(.appearanceInput){
+      border: 1px solid #727272;
+      border-radius: 5px;
+      background-color:transparent;
+      font-family: "Philosopher";
+      color: #fff;
+      padding-left: 5px;
+      height:25px;
+      width: 197px;
+    }
+    
+    form input:focus{
+      background-color: #fff7be;
+      color: #000;
+    }
+    
+    form select{
+      border: 1px solid #727272;
+      background-color:transparent;
+      font-family: "Philosopher";
+      color: #fff;
+      border-radius: 5px;
+      height:29px;
+      width: 206px;
+      /**Remove default style of select**/  
+      appearance:none;  
+      -moz-appearance:none;  
+      -webkit-appearance:none; 
+      
+      /*Change select arrow to my arrow image*/  
+      background: url("./assets/icons/form-select-arrow.png") no-repeat scroll right center transparent;
+      background-position-x: 97%;
+      
+      /*Leave a bit space for arrow*/  
+      padding-left: 5px;
+      padding-right: 27px;
+    }
+    
+    form select:focus{
+      background-color: #fff7be;
+      color: #000;
+    }
+    
+    form input:hover,select:hover{
+      border: 1px solid #e2b800;
+    }
+    
+    form textarea{
+      margin-top: 4px;
+      border: 1px solid #727272;
+      border-radius: 5px;
+      background-color:transparent;
+      font-family: "Philosopher";
+      color: #fff;
+      width: 98%;
+      height: 76px;
+    }
+    
+    form textarea:focus{
+      background-color: #fff7be;
+      color: #000;
+    }
+    
+    #buttonItem{
+      text-align: center;
+    }
+    
+    #buttonItem .buttonClass{
+      margin-top: 25px;
+      color: #e2b800;
+      font-family: "Philosopher";
+      min-width: 180px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-shadow: rgba(0, 0, 0, 0.7) 0px 1px 7px, rgba(0, 0, 0, 0.7) 0px 1px 7px;
+      line-height: 1.2em;
+      font-size: 16px;
+      background: transparent;
+      height: 70px;
+      border-style: solid;
+      border-color: transparent;
+      border-image: url(./assets/button-bg.png) 25 50 30 fill / 30px 50px / 0 repeat round;
+      padding: 2px 60px 10px 60px;
+      outline: none;
+    }
+    
+    #buttonItem .buttonClass:hover{
+      cursor: pointer;
+      color: #ffd000;
+      font-weight: 700;
+    }
+    
+    #buttonItem .buttonClass[type="submit"]{
+      font-weight: bold;
+    }
+ 
+    
+    /**
+        ---  Rules for footer  ---  
+    **/
+    footer{
+      height:62px;
+      background-image: url("./assets/footer-bg.png");
+      background-repeat: no-repeat;
+      padding: 1% 2% 0 2%;
+      line-height: 2.4;
+      text-align: center;
+    }
+    
+    /** Public class rules **/
+    .divClearFloat{
+      clear: both;
+    }
+    
+    .eleFloatLeft{
+      float: left;
+    }
+    
+    .setWidth_PX_20{
+      width: 207px;
+    }
+    
+    .setWidth_PX_80{
+      width: 753px;
+    }
+    
+    .setWidth_P_50{
+      width: 50%;
+    }
+    
+    .p-no-margin-bottom{
+      margin-bottom: 0;
+    }
+    
+  </style>
+</head>
+<body>
+
+  
+  <div id="wrapper"><!--wrapper start-->
+    
+    <header>
+      <!--2 images start-->
+      <img src="./assets/main_logo.png" alt="main logo"/>
+      <img src="./assets/services.png" alt="services"/>
+      <!--2 images end-->
+    </header>
+    
+    <section>
+      
+      <!--left area start-->
+      <div class="floatLeft setWidth_PX_20">
+        <div class="content">
+          <!--nav start-->
+          <nav id="navList">
+            <ul>
+              <li class="nav-item">
+                <img src="./assets/icons/menu-item-icon-1.png"/>
+                <a class="active" href="#" title="Create a character">Character</a>
+              </li>
+              <li class="nav-item">
+                <img src="./assets/icons/menu-item-icon-2.png"/>
+                <a href="#" title="Create a character">Mounts</a>
+              </li>
+              <li class="nav-item">
+                <img src="./assets/icons/menu-item-icon-3.png"/>
+                <a href="#" title="Create a character">Bundles</a>
+              </li>
+              <li class="nav-item">
+                <img src="./assets/icons/menu-item-icon-4.png"/>
+                <a href="#" title="Create a character">Pets</a>
+              </li>
+            </ul>
+          </nav>
+          <!--nav end-->
+        </div>
+      </div>
+      <!--left area end-->
+      
+      <!--right area start-->
+      <div class="floatRight setWidth_PX_80">
+        <div class="content">
+          <form
+            id="createCharacterForm" 
+            action="http://www.scott-media.com/test/form_display.php"
+            method="post"
+            autocomplete="on">
+            
+            <!--Row 1, 2 Column start-->
+            <div>
+              <div class="eleFloatLeft setWidth_P_50">
+                
+                <!--character info fieldset start-->
+                <fieldset>
+                  <legend>Character Info</legend>
+                  <p>
+                    <label for="c_name">Name</label>
+                    <input type="text" name="c_name" id="c_name" maxlength="10" size="25" placeholder="What is your name?" required/>
+                  </p>
+                  
+                  <p>
+                    <label for="c_area">Area</label>
+                    <select name="c_area" id="c_area" required>
+                      <option value="">Select your area</option>
+                      <option value="sc">Stormwind City</option>
+                      <option value="org">Orgrimmar</option>
+                      <option value="dalaran">Dalaran</option>
+                      <option value="darn">Darnassus</option>
+                      <option value="shat">Shattras</option>
+                    </select>
+                  </p>
+                  
+                  <p>
+                    <label for="c_level">Level</label>
+                    <input type="number" name="c_level" id="c_level" maxlength="10" size="25" placeholder="What is your level?" required/>
+                  </p>
+                  
+                  <p>
+                    <label for="c_race">Race</label>
+                    <input type="text" name="c_race" id="c_race" maxlength="10" size="25" placeholder="What is your race?" required/>
+                  </p>
+                  
+                </fieldset>
+                <!--character info fieldset end-->
+                
+              </div>
+              <div class="eleFloatLeft setWidth_P_50">
+              
+                <!--appearance fieldset start-->
+                <fieldset>
+                  <legend>Appearance</legend>
+                  
+                  <p>
+                    <label>Hair Style</label>
+                    
+                    <input type="radio" id="hair_style_1" name="hairstyle" value="1" class="appearanceInput" required>
+                    <label for="hair_style_1" class="appearanceLabel">#1</label>
+                    
+                    <input type="radio" id="hair_style_2" name="hairstyle" value="2" class="appearanceInput">
+                    <label for="hair_style_2" class="appearanceLabel">#2</label>
+                    
+                    <input type="radio" id="hair_style_3" name="hairstyle" value="3" class="appearanceInput">
+                    <label for="hair_style_3" class="appearanceLabel">#3</label>
+                  </p>
+                  
+                  <p>
+                    <label>Hair Color</label>
+                    
+                    <input type="checkbox" id="hair_color_1" name="haircolor" value="1" class="appearanceInput">
+                    <label for="hair_color_1" class="appearanceLabel">Color #1</label>
+                    
+                    <input type="checkbox" id="hair_color_2" name="haircolor" value="2" class="appearanceInput">
+                    <label for="hair_color_2" class="appearanceLabel">Color #2</label>
+                  </p>
+                  
+                  <p class="p-no-margin-bottom">
+                    <label for="hair_color_desc">Description</label>
+                    <textarea id="hair_color_desc" name="hair_color_desc" rows="4" cols="30" placeholder="Briefly describe your looks" required></textarea>
+                  </p>
+                  
+                </fieldset>
+                <!--appearance fieldset end-->
+                
+              </div>
+              <div class="divClearFloat"></div>
+            </div>
+            <!--Row 1, 2 Column end-->
+            
+            <!--buttons start-->
+            <div id="buttonItem">
+              <input type="reset" value="Reset" class="buttonClass"/>
+              <input type="submit" value="Create" class="buttonClass"/>
+            </div>
+            <!--buttons end-->
+            
+          </form>
+        </div>
+      </div>
+      <!--right area end-->
+      
+      <div class="divClearFloat"></div>
+      
+    </section>
+    
+    <footer>
+      <span>&copy; 2020 Bobby Chao</span>
+    </footer>
+    
+  </div><!--wrapper end-->
+  
+</body>
+</html>
