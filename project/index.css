@@ -1,3 +1,10 @@
+/**
+    /////////////////////////////////////
+    //       Bobby (LINGKAI) Chao      //
+    //      Intermediate HTML5&CSS     //
+    //           Final Project         //
+    /////////////////////////////////////
+**/
 body{
       font-family: 'Times New Roman';
       background-color: #1f1f1f;
@@ -182,7 +189,7 @@ body{
       color: #000;
     }
     
-    form input:hover,select:hover{
+    form input:hover,select:hover,textarea:hover{
       border: 1px solid #e2b800;
     }
     
