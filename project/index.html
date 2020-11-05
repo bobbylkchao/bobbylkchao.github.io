@@ -35,9 +35,10 @@
       height: 137px;
       line-height: 13;
       vertical-align: middle;
-      text-align: center;
+      text-align: left;
       background-image: url("./assets/header-bg.png");
       background-repeat: no-repeat;
+      padding-left:20px;
     }
     
     /**
@@ -47,7 +48,6 @@
       overflow: scroll;
       /**Hide section's scrollbar but keep functionality**/
       -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
     }
     
     /**Hide section's scrollbar but keep functionality**/
@@ -291,6 +291,10 @@
       margin-bottom: 0;
     }
     
+    .hide{
+      display: none;
+    }
+    
   </style>
 </head>
 <body>
@@ -306,7 +310,7 @@
     </header>
     
     <section>
-      
+      <h1 class="hide">I HIDE THIS HEADING, BECAUSE IT LOOKS NOT GOOD</h1>
       <!--left area start-->
       <div class="floatLeft setWidth_PX_20">
         <div class="content">
@@ -314,19 +318,19 @@
           <nav id="navList">
             <ul>
               <li class="nav-item">
-                <img src="./assets/icons/menu-item-icon-1.png"/>
+                <img src="./assets/icons/menu-item-icon-1.png" alt="Character"/>
                 <a class="active" href="#" title="Create a character">Character</a>
               </li>
               <li class="nav-item">
-                <img src="./assets/icons/menu-item-icon-2.png"/>
+                <img src="./assets/icons/menu-item-icon-2.png" alt="Mounts"/>
                 <a href="#" title="Create a character">Mounts</a>
               </li>
               <li class="nav-item">
-                <img src="./assets/icons/menu-item-icon-3.png"/>
+                <img src="./assets/icons/menu-item-icon-3.png" alt="Bundles"/>
                 <a href="#" title="Create a character">Bundles</a>
               </li>
               <li class="nav-item">
-                <img src="./assets/icons/menu-item-icon-4.png"/>
+                <img src="./assets/icons/menu-item-icon-4.png" alt="Pets"/>
                 <a href="#" title="Create a character">Pets</a>
               </li>
             </ul>
@@ -354,7 +358,7 @@
                   <legend>Character Info</legend>
                   <p>
                     <label for="c_name">Name</label>
-                    <input type="text" name="c_name" id="c_name" maxlength="10" size="25" placeholder="What is your name?" required/>
+                    <input type="text" name="c_name" id="c_name" maxlength="10" placeholder="What is your name?" required/>
                   </p>
                   
                   <p>
@@ -371,12 +375,12 @@
                   
                   <p>
                     <label for="c_level">Level</label>
-                    <input type="number" name="c_level" id="c_level" maxlength="10" size="25" placeholder="What is your level?" required/>
+                    <input type="number" name="c_level" id="c_level" placeholder="What is your level?" required/>
                   </p>
                   
                   <p>
                     <label for="c_race">Race</label>
-                    <input type="text" name="c_race" id="c_race" maxlength="10" size="25" placeholder="What is your race?" required/>
+                    <input type="text" name="c_race" id="c_race" maxlength="10" placeholder="What is your race?" required/>
                   </p>
                   
                 </fieldset>
@@ -405,11 +409,11 @@
                   <p>
                     <label>Hair Color</label>
                     
-                    <input type="checkbox" id="hair_color_1" name="haircolor" value="1" class="appearanceInput">
-                    <label for="hair_color_1" class="appearanceLabel">Color #1</label>
+                    <input type="checkbox" id="hair_color_1" name="haircolor" value="red" class="appearanceInput">
+                    <label for="hair_color_1" class="appearanceLabel">Red</label>
                     
-                    <input type="checkbox" id="hair_color_2" name="haircolor" value="2" class="appearanceInput">
-                    <label for="hair_color_2" class="appearanceLabel">Color #2</label>
+                    <input type="checkbox" id="hair_color_2" name="haircolor" value="green" class="appearanceInput">
+                    <label for="hair_color_2" class="appearanceLabel">Green</label>
                   </p>
                   
                   <p class="p-no-margin-bottom">
