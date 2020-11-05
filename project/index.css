@@ -9,277 +9,277 @@ body{
       font-family: 'Times New Roman';
       background-color: #1f1f1f;
       color: #e2b800;
-    }
-    
-    #wrapper{
-      width: 960px;
-      margin: 0 auto;
-    }
-    
-    /**
-        ---  Rules for header  ---  
-    **/
-    
-    header{
-      height: 137px;
-      line-height: 13;
-      vertical-align: middle;
-      text-align: left;
-      background-image: url("./assets/header-bg.png");
-      background-repeat: no-repeat;
-      padding-left:20px;
-    }
-    
-    /**
-        ---  Rules for section  ---  
-    **/
-    section{
-      overflow: scroll;
-      /**Hide section's scrollbar but keep functionality**/
-      -ms-overflow-style: none;  /* IE and Edge */
-    }
-    
-    /**Hide section's scrollbar but keep functionality**/
-    section::-webkit-scrollbar {
-      display: none;
-    }
+}
 
-    section .floatLeft{
-      height: 550px;
-      max-height: 550px;
-      float: left;
-      background-image: url("./assets/center-left-bg.png");
-      background-repeat: no-repeat;
-    }
-    
-    section .floatLeft .content{
-      margin: 43% 10px 0 11%;
-    }
-    
-    section .floatRight{
-      height: 559px;
-      max-height: 559px;
-      float: right;
-      background-image: url("./assets/center-right-bg.png");
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-    }
-    
-    section .floatRight .content{
-      margin: 11% 25px 0 3%;
-    }
-    
-    #navList ul{
-      margin: 0;
-      padding: 0;
-    }
-    
-    #navList ul li{
-      list-style-type: none;
-    }
-    
-    #navList .nav-item{
-      position: relative;
-    }
-    
-    /** set nav-item margin-top, except first one **/
-    #navList .nav-item:nth-of-type(n+2){
-      margin-top: 20px;
-    }
-    
-    #navList .nav-item a{
-      display: block;
-      height: 34px;
-      text-decoration: none;
-      color: #e2b800;
-      background-image: url("./assets/menu-item-bg-normal.png");
-      background-repeat: no-repeat;
-      padding-left: 21%;
-      line-height: 1.9;
-    }
-    
-    #navList .nav-item a:hover{
-      background-image: url("./assets/menu-item-bg-hover.png");
-      background-repeat: no-repeat;
-    }
-    
-    #navList .nav-item a.active{
-      background-image: url("./assets/menu-item-bg-hover.png");
-      background-repeat: no-repeat;
-    }
-    
-    #navList .nav-item img{
-      position: absolute;
-      top: 2%;
-    }
-    
-    /**
-        --- Rules for form ---
-    **/
-    form label,legend{
-      font-family: "Philosopher";
-    }
-    
-    /**label style only for ele which class not is appearanceLabel**/
-    form label:not(.appearanceLabel){
-      font-family: "Philosopher";
-      color:#fff;
-      display: inline-block;
-      width: 100px;
-    }
-    
-    form label[class="appearanceLabel"]{
-      font-family: "Philosopher";
-      color:#fff;
-    }
-    
-    form legend{
-      border: 1px solid #e2b800;
-      padding: 5px;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-    
-    form fieldset{
-      border: 2px solid #727272;
-      border-radius: 5px;
-    }
-    
-    /**input style only for ele which class not is appearanceInput**/
-    form input:not(.appearanceInput){
-      border: 1px solid #727272;
-      border-radius: 5px;
-      background-color:transparent;
-      font-family: "Philosopher";
-      color: #fff;
-      padding-left: 5px;
-      height:25px;
-      width: 197px;
-    }
-    
-    form input:focus{
-      background-color: #fff7be;
-      color: #000;
-    }
-    
-    form select{
-      border: 1px solid #727272;
-      background-color:transparent;
-      font-family: "Philosopher";
-      color: #fff;
-      border-radius: 5px;
-      height:29px;
-      width: 206px;
-      /**Remove default style of select**/  
-      appearance:none;  
-      -moz-appearance:none;  
-      -webkit-appearance:none; 
-      
-      /*Change select arrow to my arrow image*/  
-      background: url("./assets/icons/form-select-arrow.png") no-repeat scroll right center transparent;
-      background-position: 97% center;
-      
-      /*Leave a bit space for arrow*/  
-      padding-left: 5px;
-      padding-right: 27px;
-    }
-    
-    form select:focus{
-      background-color: #fff7be;
-      color: #000;
-    }
-    
-    form input:hover,select:hover,textarea:hover{
-      border: 1px solid #e2b800;
-    }
-    
-    form textarea{
-      margin-top: 4px;
-      border: 1px solid #727272;
-      border-radius: 5px;
-      background-color:transparent;
-      font-family: "Philosopher";
-      color: #fff;
-      width: 98%;
-      height: 76px;
-    }
-    
-    form textarea:focus{
-      background-color: #fff7be;
-      color: #000;
-    }
-    
-    #buttonItem{
-      text-align: center;
-    }
-    
-    #buttonItem .buttonClass{
-      margin-top: 25px;
-      color: #e2b800;
-      font-family: "Philosopher";
-      min-width: 180px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      text-shadow: rgba(0, 0, 0, 0.7) 0px 1px 7px, rgba(0, 0, 0, 0.7) 0px 1px 7px;
-      line-height: 1.2em;
-      font-size: 16px;
-      background: transparent;
-      height: 70px;
-      border-style: solid;
-      border-color: transparent;
-      border-image: url(./assets/button-bg.png) 25 50 30 fill / 30px 50px / 0 repeat round;
-      padding: 2px 60px 10px 60px;
-      outline: none;
-    }
-    
-    #buttonItem .buttonClass:hover{
-      cursor: pointer;
-      color: #ffd000;
-      font-weight: 700;
-    }
-    
-    #buttonItem .buttonClass[type="submit"]{
-      font-weight: bold;
-    }
- 
-    
-    /**
-        ---  Rules for footer  ---  
-    **/
-    footer{
-      height:62px;
-      background-image: url("./assets/footer-bg.png");
-      background-repeat: no-repeat;
-      padding: 1% 2% 0 2%;
-      line-height: 2.4;
-      text-align: center;
-    }
-    
-    /** Public class rules **/
-    .divClearFloat{
-      clear: both;
-    }
-    
-    .eleFloatLeft{
-      float: left;
-    }
-    
-    .setWidth_PX_20{
-      width: 207px;
-    }
-    
-    .setWidth_PX_80{
-      width: 753px;
-    }
-    
-    .setWidth_P_50{
-      width: 50%;
-    }
-    
-    .p-no-margin-bottom{
-      margin-bottom: 0;
-    }
-    
-    .hide{
-      display: none;
-    }
+#wrapper{
+  width: 960px;
+  margin: 0 auto;
+}
+
+/**
+    ---  Rules for header  ---  
+**/
+
+header{
+  height: 137px;
+  line-height: 13;
+  vertical-align: middle;
+  text-align: left;
+  background-image: url("./assets/header-bg.png");
+  background-repeat: no-repeat;
+  padding-left:20px;
+}
+
+/**
+    ---  Rules for section  ---  
+**/
+section{
+  overflow: scroll;
+  /**Hide section's scrollbar but keep functionality**/
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+/**Hide section's scrollbar but keep functionality**/
+section::-webkit-scrollbar {
+  display: none;
+}
+
+section .floatLeft{
+  height: 550px;
+  max-height: 550px;
+  float: left;
+  background-image: url("./assets/center-left-bg.png");
+  background-repeat: no-repeat;
+}
+
+section .floatLeft .content{
+  margin: 43% 10px 0 11%;
+}
+
+section .floatRight{
+  height: 559px;
+  max-height: 559px;
+  float: right;
+  background-image: url("./assets/center-right-bg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+section .floatRight .content{
+  margin: 11% 25px 0 3%;
+}
+
+#navList ul{
+  margin: 0;
+  padding: 0;
+}
+
+#navList ul li{
+  list-style-type: none;
+}
+
+#navList .nav-item{
+  position: relative;
+}
+
+/** set nav-item margin-top, except first one **/
+#navList .nav-item:nth-of-type(n+2){
+  margin-top: 20px;
+}
+
+#navList .nav-item a{
+  display: block;
+  height: 34px;
+  text-decoration: none;
+  color: #e2b800;
+  background-image: url("./assets/menu-item-bg-normal.png");
+  background-repeat: no-repeat;
+  padding-left: 21%;
+  line-height: 1.9;
+}
+
+#navList .nav-item a:hover{
+  background-image: url("./assets/menu-item-bg-hover.png");
+  background-repeat: no-repeat;
+}
+
+#navList .nav-item a.active{
+  background-image: url("./assets/menu-item-bg-hover.png");
+  background-repeat: no-repeat;
+}
+
+#navList .nav-item img{
+  position: absolute;
+  top: 2%;
+}
+
+/**
+    --- Rules for form ---
+**/
+form label,legend{
+  font-family: "Philosopher";
+}
+
+/**label style only for ele which class not is appearanceLabel**/
+form label:not(.appearanceLabel){
+  font-family: "Philosopher";
+  color:#fff;
+  display: inline-block;
+  width: 100px;
+}
+
+form label[class="appearanceLabel"]{
+  font-family: "Philosopher";
+  color:#fff;
+}
+
+form legend{
+  border: 1px solid #e2b800;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+form fieldset{
+  border: 2px solid #727272;
+  border-radius: 5px;
+}
+
+/**input style only for ele which class not is appearanceInput**/
+form input:not(.appearanceInput){
+  border: 1px solid #727272;
+  border-radius: 5px;
+  background-color:transparent;
+  font-family: "Philosopher";
+  color: #fff;
+  padding-left: 5px;
+  height:25px;
+  width: 197px;
+}
+
+form input:focus{
+  background-color: #fff7be;
+  color: #000;
+}
+
+form select{
+  border: 1px solid #727272;
+  background-color:transparent;
+  font-family: "Philosopher";
+  color: #fff;
+  border-radius: 5px;
+  height:29px;
+  width: 206px;
+  /**Remove default style of select**/  
+  appearance:none;  
+  -moz-appearance:none;  
+  -webkit-appearance:none; 
+
+  /*Change select arrow to my arrow image*/  
+  background: url("./assets/icons/form-select-arrow.png") no-repeat scroll right center transparent;
+  background-position: 97% center;
+
+  /*Leave a bit space for arrow*/  
+  padding-left: 5px;
+  padding-right: 27px;
+}
+
+form select:focus{
+  background-color: #fff7be;
+  color: #000;
+}
+
+form input:hover,select:hover,textarea:hover{
+  border: 1px solid #e2b800;
+}
+
+form textarea{
+  margin-top: 4px;
+  border: 1px solid #727272;
+  border-radius: 5px;
+  background-color:transparent;
+  font-family: "Philosopher";
+  color: #fff;
+  width: 98%;
+  height: 76px;
+}
+
+form textarea:focus{
+  background-color: #fff7be;
+  color: #000;
+}
+
+#buttonItem{
+  text-align: center;
+}
+
+#buttonItem .buttonClass{
+  margin-top: 25px;
+  color: #e2b800;
+  font-family: "Philosopher";
+  min-width: 180px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: rgba(0, 0, 0, 0.7) 0px 1px 7px, rgba(0, 0, 0, 0.7) 0px 1px 7px;
+  line-height: 1.2em;
+  font-size: 16px;
+  background: transparent;
+  height: 70px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: url(./assets/button-bg.png) 25 50 30 fill / 30px 50px / 0 repeat round;
+  padding: 2px 60px 10px 60px;
+  outline: none;
+}
+
+#buttonItem .buttonClass:hover{
+  cursor: pointer;
+  color: #ffd000;
+  font-weight: 700;
+}
+
+#buttonItem .buttonClass[type="submit"]{
+  font-weight: bold;
+}
+
+
+/**
+    ---  Rules for footer  ---  
+**/
+footer{
+  height:62px;
+  background-image: url("./assets/footer-bg.png");
+  background-repeat: no-repeat;
+  padding: 1% 2% 0 2%;
+  line-height: 2.4;
+  text-align: center;
+}
+
+/** Public class rules **/
+.divClearFloat{
+  clear: both;
+}
+
+.eleFloatLeft{
+  float: left;
+}
+
+.setWidth_PX_20{
+  width: 207px;
+}
+
+.setWidth_PX_80{
+  width: 753px;
+}
+
+.setWidth_P_50{
+  width: 50%;
+}
+
+.p-no-margin-bottom{
+  margin-bottom: 0;
+}
+
+.hide{
+  display: none;
+}
