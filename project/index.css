@@ -236,6 +236,10 @@ form textarea:focus{
   cursor: pointer;
   color: #ffd000;
   font-weight: 700;
+  -webkit-filter: brightness(1.8);
+  -moz-filter: brightness(1.8);
+  -o-filter: brightness(1.8);
+  -ms-filter: brightness(1.8);
 }
 
 #buttonItem .buttonClass[type="submit"]{
