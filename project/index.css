@@ -30,18 +30,20 @@ header{
   padding-left:20px;
 }
 
+header:hover{
+  /**When hover, change brightness, makes more focuser**/
+  /**support most browsers, IE Edge/firefox/chrome **/
+  -webkit-filter: brightness(1.8);
+  -moz-filter: brightness(1.8);
+  -o-filter: brightness(1.8);
+  -ms-filter: brightness(1.8);
+}
+
 /**
     ---  Rules for section  ---  
 **/
 section{
-  overflow: scroll;
-  /**Hide section's scrollbar but keep functionality**/
-  -ms-overflow-style: none;  /* IE and Edge */
-}
-
-/**Hide section's scrollbar but keep functionality**/
-section::-webkit-scrollbar {
-  display: none;
+  overflow: hidden;
 }
 
 section .floatLeft{
@@ -236,6 +238,8 @@ form textarea:focus{
   cursor: pointer;
   color: #ffd000;
   font-weight: 700;
+  /**When hover, change brightness, makes more focuser**/
+  /**support most browsers, IE Edge/firefox/chrome **/
   -webkit-filter: brightness(1.8);
   -moz-filter: brightness(1.8);
   -o-filter: brightness(1.8);
