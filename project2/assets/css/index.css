@@ -1,0 +1,333 @@
+/**
+    /////////////////////////////////////
+    //       Bobby (LINGKAI) Chao      //
+    //       Advanced HTML5&CSS3       //
+    //           Asssignment1          //
+    /////////////////////////////////////
+**/
+body{
+	font-family: 'Roboto','Times New Roman';
+	background-color: #0f0f0f;
+	color: #fff;
+}
+
+/**Css for container: wrapper**/
+#wrapper{
+	width: 960px;
+	height: 768px;
+	overflow: hidden;
+	margin: 20px auto;
+	border: 1px solid #616161;
+	border-radius: 5px;
+	background-image:url(../img/bg-wallpaper-1080p.jpg);
+	background-repeat:no-repeat;
+	background-position: center center;
+	position: relative;/**set wrapper to relative, that container-bottom-docker can stay on it bottom**/
+}
+
+/**Css for container: container-top-menu**/
+#container-top-menu{
+	background-color: #222222;
+	color: #fff;
+	width: 100%;
+	height: 30px;
+}
+
+#container-top-menu .item{
+	float: left;
+	max-width: 60px;
+	height: 100%;
+	line-height: 2.4;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0px 3px 2px rgba(0,0,0,0.64);
+}
+
+#container-top-menu .item:not(:first-child){
+	/**Only apply for items which are not first-child**/
+	padding: 0 10px;
+	line-height: 1.9;
+}
+
+#container-top-menu .item:hover{
+	cursor: pointer;
+	background-color: #034cda;
+}
+
+#container-top-menu .item img{
+	height: auto;
+	width: 35%;
+}
+
+/**Css for container: container-center-desktop**/
+#container-center-desktop{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.item-sticky-notes-1{
+	max-width: 200px;
+	min-width: 180px;
+	color: #000;
+	border: 1px solid #222;
+	position: absolute;
+	right: 2%;
+	top: 4%;
+}
+
+.item-sticky-notes-2{
+	max-width: 200px;
+	min-width: 180px;
+	color: #000;
+	border: 1px solid #222;
+	position: absolute;
+	right: 2%;
+	top: 18%;
+}
+
+.item-sticky-notes-3{
+	max-width: 200px;
+	min-width: 180px;
+	color: #000;
+	border: 1px solid #222;
+	position: absolute;
+	right: 2%;
+	top: 41%;
+}
+
+.item-sticky-notes-4{
+	max-width: 200px;
+	min-width: 180px;
+	color: #000;
+	border: 1px solid #222;
+	position: absolute;
+	right: 24%;
+  top: 4%;
+}
+
+.item-sticky-notes-5{
+	max-width: 200px;
+	min-width: 180px;
+	height: 60px;
+	color: #000;
+	border: 1px solid #222;
+	position: absolute;
+	right: 46%;
+	top: 4%;
+}
+
+.item-sticky-notes-6{
+	max-width: 200px;
+	min-width: 180px;
+	height: 60px;
+	color: #000;
+	border: 1px solid #222;
+	margin-top: 15px;
+}
+
+.sticky-notes-2-content-div{
+	margin: 10px auto;
+	left: 0;
+	right: 0;
+	width: 100px;
+	height: 50px;
+	line-height: 25px;
+	border-radius: 100%;
+	text-align: center;
+}
+
+#container-center-desktop .item-sticky-notes-title{
+	height: 30px;
+	line-height: 2;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	padding:0 5px;
+}
+
+#container-center-desktop .item-sticky-notes-content{
+	max-height: 500px;
+	min-height: 20px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	font-family: 'Courgette','Times New Roman';
+	padding: 10px 10px;
+}
+
+#container-center-desktop .item-sticky-notes-content.transtion_01{
+	height: 43px;
+	transition: all 0.3s ease-in-out;
+}
+
+#container-center-desktop .item-sticky-notes-content.transtion_01:hover{
+	height: 200px;
+}
+
+#container-center-desktop .item-sticky-notes-content.transtion_02{
+	opacity: 1;
+	transition: all 1s ease-in-out;
+}
+
+#container-center-desktop .item-sticky-notes-content.transtion_02:hover{
+	opacity: 0.1;
+}
+
+/**Css for container: container-bottom-docker**/
+#container-bottom-docker{
+	background-color: #0f0f0f;
+	color: #fff;
+	border: 1px solid #474747;
+	border-bottom: 0;
+	border-radius: 5px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	position: absolute;
+	bottom: 0;
+	height:88px;
+	width: 45%;
+	text-align: center;
+	/**Set this container at center**/
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.container-bottom-docker-top{
+	color: gray;
+	padding: 9px;
+}
+
+#container-bottom-docker img{
+	border-radius: 8px;
+	margin-left: 10px;
+	transition: transform 0.8s linear;
+}
+
+#container-bottom-docker img:hover{
+	cursor: pointer;
+	transform:rotate(360deg);
+}
+
+/**when hover the img, filter the alt value, and change docker-item-hover-title-xy-x opacity**/
+#container-bottom-docker img[alt='finder']:hover ~ .docker-item-hover-title-xy-1{
+	opacity: 1;
+}
+
+#container-bottom-docker img[alt='launchpad']:hover ~ .docker-item-hover-title-xy-2{
+	opacity: 1;
+}
+
+#container-bottom-docker img[alt='safari']:hover ~ .docker-item-hover-title-xy-3{
+	opacity: 1;
+}
+
+#container-bottom-docker img[alt='music']:hover ~ .docker-item-hover-title-xy-4{
+	opacity: 1;
+}
+
+#container-bottom-docker img[alt='facetime']:hover ~ .docker-item-hover-title-xy-5{
+	opacity: 1;
+}
+
+#container-bottom-docker img[alt='setting']:hover ~ .docker-item-hover-title-xy-6{
+	opacity: 1;
+}
+
+#container-bottom-docker img[alt='trash']:hover ~ .docker-item-hover-title-xy-7{
+	opacity: 1;
+}
+
+.docker-item-hover-title{
+	background-color: #2d2d2d;
+	color: #fff;
+	min-width: 66px;
+	line-height: normal;
+	text-align: center;
+	position: absolute;
+	padding: 5px;
+	border-radius: 4px;
+	border: 1px solid #929292;
+}
+
+.docker-item-hover-title-xy-1{transition: all 0.3s ease;bottom: 62%;left: 3.5%;}/**docker item hover float title div x,y**/
+.docker-item-hover-title-xy-2{transition: all 0.3s ease;bottom: 62%;left: 15%;}/**docker item hover float title div x,y**/
+.docker-item-hover-title-xy-3{transition: all 0.3s ease;bottom: 62%;left: 29%;}/**docker item hover float title div x,y**/
+.docker-item-hover-title-xy-4{transition: all 0.3s ease;bottom: 62%;left: 42%;}/**docker item hover float title div x,y**/
+.docker-item-hover-title-xy-5{transition: all 0.3s ease;bottom: 62%;left: 54%;}/**docker item hover float title div x,y**/
+.docker-item-hover-title-xy-6{transition: all 0.3s ease;bottom: 62%;left: 67%;}/**docker item hover float title div x,y**/
+.docker-item-hover-title-xy-7{transition: all 0.3s ease;bottom: 62%;right: 2%;}/**docker item hover float title div x,y**/
+
+/**Css For Container: Footer**/
+footer{
+	text-align: center;
+	color: #fff;
+}
+
+/**Css for Public**/
+.clearBoth{
+	clear: both;
+}
+
+.bgColorWhite{
+	background-color: #fff;
+}
+
+.bgColorLightYellow{
+	background-color: #ffefad;
+}
+
+.boxShadowBlack{
+	/**set shadow effect, and apply to **/
+	-moz-box-shadow: 0 2px 8px 0px rgba(0,0,0,0.66);/**Firefox 3.5~Firefox 3.6**/
+	box-shadow: 0 2px 8px 0px rgba(0,0,0,0.66);
+}
+
+.textShadowBlack{
+	text-shadow: 0px 3px 2px rgba(0,0,0,0.64);
+}
+
+.bgGradient{
+	background: -moz-linear-gradient(top, #f6e6b4 0%, #ea8407 100%); /* Firefox 3.6-15 */
+	background: -webkit-linear-gradient(top, #f6e6b4 0%,#ea8407 100%); /* Chrome 10-25,Safari 5.1-6 */
+	background: linear-gradient(to bottom, #f6e6b4 0%,#ea8407 100%);
+}
+
+.textCenter{
+	text-align: center;
+}
+
+.transform_1{
+	width: 40%;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.transform_2{
+	width: 40%;
+	-webkit-transform: skewY(20deg);
+	-moz-transform: skewY(20deg);
+	-o-transform: skewY(20deg);
+	transform: skewY(20deg);
+}
+
+.transform_3{
+	width: 40%;
+	-webkit-transform: matrix(0.586,0.8,-0.8,0.586,40,10);
+	-moz-transform: matrix(0.586,0.8,-0.8,0.586,40,10);
+	-o-transform: matrix(0.586,0.8,-0.8,0.586,40,10);
+	transform: matrix(0.586,0.8,-0.8,0.586,40,10);
+}
+
+.eleHide{
+	display: none;
+}
+
+.eleHideKeepArea{
+	visibility: hidden;
+}
+
+.eleOpacity{
+	opacity: 0;
+}
