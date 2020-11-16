@@ -83,7 +83,7 @@ body{
 	border: 1px solid #222;
 	position: absolute;
 	right: 2%;
-	top: 18%;
+	top: 20%;
 }
 
 .item-sticky-notes-3{
@@ -93,7 +93,7 @@ body{
 	border: 1px solid #222;
 	position: absolute;
 	right: 2%;
-	top: 41%;
+	top: 43%;
 }
 
 .item-sticky-notes-4{
@@ -126,21 +126,24 @@ body{
 }
 
 .item-sticky-notes-7{
-    width: 500px;
-    height: 60px;
-    color: #000;
-    border: 1px solid #222;
-    position: absolute;
-    right: 24%;
-    top: 43%;
+	width: 500px;
+	height: 60px;
+	color: #000;
+	border: 1px solid #222;
+	position: absolute;
+	right: 24%;
+	top: 33%;
 }
 
 .item-sticky-notes-7-3d{
-    width: 100%;
-    height: 200px;
-    background-color: #3f9d57;
-    -webkit-transform: scale(0.8) skew(-65deg, 9deg);
-    transform: scale(0.5) skew(-65deg, 9deg);
+	width: 100%;
+	height: 200px;
+	background-color: #3f9d57;
+	-webkit-transform: scale(0.8) skew(-65deg, 9deg);
+	transform: scale(0.5) skew(-65deg, 9deg);
+	-webkit-box-shadow: 20px 4px 20px 0px rgba(255,79,0,1);
+	-moz-box-shadow: 20px 4px 20px 0px rgba(255,79,0,1);
+	box-shadow: 20px 4px 20px 0px rgba(255,79,0,1);
 }
 
 .sticky-notes-2-content-div{
@@ -173,24 +176,28 @@ body{
 
 #container-center-desktop .item-sticky-notes-content.transtion_01{
 	height: 43px;
+	background-color: #fff;
+	color:#000;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
 
 #container-center-desktop .item-sticky-notes-content.transtion_01:hover{
-	height: 200px;
+	height: 60px;
+	color:#fff;
+	background-color: rgb(255, 0, 106);
 }
 
 #container-center-desktop .item-sticky-notes-content.transtion_02{
 	opacity: 1;
-	-webkit-transition: all 1s ease-in-out;
-	-o-transition: all 1s ease-in-out;
-	transition: all 1s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
 #container-center-desktop .item-sticky-notes-content.transtion_02:hover{
-	opacity: 0.1;
+	opacity: 0;
 }
 
 /**Css for container: container-bottom-docker**/
@@ -302,6 +309,10 @@ footer{
 	background-color: #ffefad;
 }
 
+.bgColorBlack{
+	background: #333333;
+}
+
 .boxShadowBlack{
 	/**set shadow effect, and apply to **//**Firefox 3.5~Firefox 3.6**/
 	-webkit-box-shadow: 0 2px 8px 0px rgba(0,0,0,0.66);
@@ -309,6 +320,24 @@ footer{
 }
 
 .textShadowBlack{
+	color: #000;
+	text-shadow: 
+		1px 0px 1px #CCCCCC, 
+		0px 1px 1px #EEEEEE, 
+		2px 1px 1px #CCCCCC, 
+		1px 2px 1px #EEEEEE, 
+		3px 2px 1px #CCCCCC, 
+		2px 3px 1px #EEEEEE, 
+		4px 3px 1px #CCCCCC, 
+		3px 4px 1px #EEEEEE, 
+		5px 4px 1px #CCCCCC, 
+		4px 5px 1px #EEEEEE, 
+		6px 5px 1px #CCCCCC, 
+		5px 6px 1px #EEEEEE, 
+		7px 6px 1px #CCCCCC;
+}
+
+.textShadowRed{
 	text-shadow: 2px 2px 2px #CE5937;
 }
 
