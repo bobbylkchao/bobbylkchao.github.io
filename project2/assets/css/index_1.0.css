@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 10 version
-*/
-
 /**
     /////////////////////////////////////
     //       Bobby (LINGKAI) Chao      //
@@ -163,8 +156,6 @@ body{
 
 #container-center-desktop .item-sticky-notes-content.transtion_01{
 	height: 43px;
-	-webkit-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -174,8 +165,6 @@ body{
 
 #container-center-desktop .item-sticky-notes-content.transtion_02{
 	opacity: 1;
-	-webkit-transition: all 1s ease-in-out;
-	-o-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
 
@@ -211,18 +200,12 @@ body{
 #container-bottom-docker img{
 	border-radius: 8px;
 	margin-left: 10px;
-	-webkit-transition: -webkit-transform 0.8s linear;
-	transition: -webkit-transform 0.8s linear;
-	-o-transition: transform 0.8s linear;
 	transition: transform 0.8s linear;
-	transition: transform 0.8s linear, -webkit-transform 0.8s linear;
 }
 
 #container-bottom-docker img:hover{
 	cursor: pointer;
-	-webkit-transform:rotate(360deg);
-	    -ms-transform:rotate(360deg);
-	        transform:rotate(360deg);
+	transform:rotate(360deg);
 }
 
 /**when hover the img, filter the alt value, and change docker-item-hover-title-xy-x opacity**/
@@ -266,13 +249,13 @@ body{
 	border: 1px solid #929292;
 }
 
-.docker-item-hover-title-xy-1{-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;bottom: 62%;left: 3.5%;}/**docker item hover float title div x,y**/
-.docker-item-hover-title-xy-2{-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;bottom: 62%;left: 15%;}/**docker item hover float title div x,y**/
-.docker-item-hover-title-xy-3{-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;bottom: 62%;left: 29%;}/**docker item hover float title div x,y**/
-.docker-item-hover-title-xy-4{-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;bottom: 62%;left: 42%;}/**docker item hover float title div x,y**/
-.docker-item-hover-title-xy-5{-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;bottom: 62%;left: 54%;}/**docker item hover float title div x,y**/
-.docker-item-hover-title-xy-6{-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;bottom: 62%;left: 67%;}/**docker item hover float title div x,y**/
-.docker-item-hover-title-xy-7{-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;bottom: 62%;right: 2%;}/**docker item hover float title div x,y**/
+.docker-item-hover-title-xy-1{transition: all 0.3s ease;bottom: 62%;left: 3.5%;}/**docker item hover float title div x,y**/
+.docker-item-hover-title-xy-2{transition: all 0.3s ease;bottom: 62%;left: 15%;}/**docker item hover float title div x,y**/
+.docker-item-hover-title-xy-3{transition: all 0.3s ease;bottom: 62%;left: 29%;}/**docker item hover float title div x,y**/
+.docker-item-hover-title-xy-4{transition: all 0.3s ease;bottom: 62%;left: 42%;}/**docker item hover float title div x,y**/
+.docker-item-hover-title-xy-5{transition: all 0.3s ease;bottom: 62%;left: 54%;}/**docker item hover float title div x,y**/
+.docker-item-hover-title-xy-6{transition: all 0.3s ease;bottom: 62%;left: 67%;}/**docker item hover float title div x,y**/
+.docker-item-hover-title-xy-7{transition: all 0.3s ease;bottom: 62%;right: 2%;}/**docker item hover float title div x,y**/
 
 /**Css For Container: Footer**/
 footer{
@@ -294,18 +277,18 @@ footer{
 }
 
 .boxShadowBlack{
-	/**set shadow effect, and apply to **//**Firefox 3.5~Firefox 3.6**/
-	-webkit-box-shadow: 0 2px 8px 0px rgba(0,0,0,0.66);
-	        box-shadow: 0 2px 8px 0px rgba(0,0,0,0.66);
+	/**set shadow effect, and apply to **/
+	-moz-box-shadow: 0 2px 8px 0px rgba(0,0,0,0.66);/**Firefox 3.5~Firefox 3.6**/
+	box-shadow: 0 2px 8px 0px rgba(0,0,0,0.66);
 }
 
 .textShadowBlack{
 	text-shadow: 0px 3px 2px rgba(0,0,0,0.64);
 }
 
-.bgGradient{ /* Firefox 3.6-15 */ /* Chrome 10-25,Safari 5.1-6 */
-	background: -webkit-gradient(linear, left top, left bottom, from(#f6e6b4),to(#ea8407));
-	background: -o-linear-gradient(top, #f6e6b4 0%,#ea8407 100%);
+.bgGradient{
+	background: -moz-linear-gradient(top, #f6e6b4 0%, #ea8407 100%); /* Firefox 3.6-15 */
+	background: -webkit-linear-gradient(top, #f6e6b4 0%,#ea8407 100%); /* Chrome 10-25,Safari 5.1-6 */
 	background: linear-gradient(to bottom, #f6e6b4 0%,#ea8407 100%);
 }
 
@@ -316,22 +299,25 @@ footer{
 .transform_1{
 	width: 40%;
 	-webkit-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	    transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
 }
 
 .transform_2{
 	width: 40%;
 	-webkit-transform: skewY(20deg);
-	-ms-transform: skewY(20deg);
-	    transform: skewY(20deg);
+	-moz-transform: skewY(20deg);
+	-o-transform: skewY(20deg);
+	transform: skewY(20deg);
 }
 
 .transform_3{
 	width: 40%;
 	-webkit-transform: matrix(0.586,0.8,-0.8,0.586,40,10);
-	-ms-transform: matrix(0.586,0.8,-0.8,0.586,40,10);
-	    transform: matrix(0.586,0.8,-0.8,0.586,40,10);
+	-moz-transform: matrix(0.586,0.8,-0.8,0.586,40,10);
+	-o-transform: matrix(0.586,0.8,-0.8,0.586,40,10);
+	transform: matrix(0.586,0.8,-0.8,0.586,40,10);
 }
 
 .eleHide{
