@@ -1,0 +1,338 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <title>Advanced HTML5/CSS3 Assignment 1 Xiaojing Shi</title>
+  <meta charset="utf-8" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Paytone+One&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+/*  Requirement 3: use of CSS3 gradient  */
+    body{
+      font-family: Lato, Arial, sans-serif;
+      background: linear-gradient(to bottom right, #fff, #E6EFDE);
+      margin: 0;
+    }
+    #wrapper{
+      width: 960px;
+      margin: 0 auto;
+      background-color: #fff;
+      position: relative;
+    }
+    
+    header{
+      height: 120px;
+      width: 960px;
+      box-sizing: border-box;
+      background-color: #6B8E5A;
+      position: fixed;
+      z-index: 20;
+    }
+    
+/* Start of Coffee bean animation CSS  */
+    #coffee_bean{
+      position: absolute;
+      top: 10px;
+      left: 930px;
+      opacity: 0;
+      -moz-animation: coffee_bean_anim 4s 0.6s ease-in-out forwards;
+      -webkit-animation: coffee_bean_anim 4s 0.6s ease-in-out forwards;
+      animation: coffee_bean_anim 3.5s ease-in-out forwards;
+    }
+    
+    @-webkit-keyframes coffee_bean_anim{
+      0%{
+        top: 10px;
+        left: 930px;
+        opacity: 0;
+      }
+      25%{
+        top: 40px;
+        left: 760px;
+        opacity: 0.4;
+      }
+      50%{
+        top: 20px;
+        left: 560px;
+        opacity: 0.8;
+      }
+      75%{
+        top: 60px;
+        left: 360px;
+        opacity: 1;
+      }
+      100%{
+        top: 45px;
+        left: 230px;
+        opacity: 1;
+      }
+    }
+    
+    @keyframes coffee_bean_anim{
+      0%{
+        top: 10px;
+        left: 930px;
+        opacity: 0;
+      }
+      25%{
+        top: 40px;
+        left: 760px;
+        opacity: 0.4;
+      }
+      50%{
+        top: 20px;
+        left: 560px;
+        opacity: 0.8;
+      }
+      75%{
+        top: 60px;
+        left: 360px;
+        opacity: 1;
+      }
+      100%{
+        top: 45px;
+        left: 230px;
+        opacity: 1;
+      }
+    }
+/*  End of coffee bean animaiton CSS    */
+    
+/*  Requirement 2: Use of text-shadow   */
+    #logo_name{
+      float: left;
+      margin-top: 20px;
+      margin-left: 30px;
+      font-size: 2.3em;
+      font-family: "Paytone One";
+      color: #314039;
+      text-shadow: 0 13px 9px #fff, 0 -2px 1px #fff;
+    }
+/*  Start of navigation CSS  */
+    nav{
+      background-color: #6B8E5A;
+      padding-top: 50px;
+      margin-right: 62px;
+    }    
+    
+    nav ul#navlist li{
+      list-style-type: none;
+      display: inline;
+      float: right;
+      font-family: Poppins;
+      font-weight: 600;
+    }
+    
+/*  Requirement 5: use of CSS3 transition  */    
+    nav ul#navlist li a{
+      text-decoration: none;
+      display: inline-block;
+      padding: 2px 11px 2px 11px;
+      font-size: 1.4rem;
+      color: #000;
+      border-radius: 6px;
+      -moz-transition: all 0.5s ease-out;
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;
+    }
+    
+    nav ul#navlist li a:hover{
+      color: #fff;
+      background: linear-gradient(to bottom, #6B8E5A, #537569);
+      box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.3);
+    } 
+/*  End of navigation CSS  */
+    
+    section{
+      background-color: #fff;
+      padding-top: 1px;
+      padding-bottom: 1px;
+      min-height: 450px;
+    }
+    
+/*   Requirement 1: use of box-shadow & Requirement 8: use of CSS border-radius; */
+    .tag_box{
+      width: 240px;
+      height: 120px;
+      font-size: 1.2rem;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0 6px 8px rgba(0,0,0,0.6);
+      z-index: 10;
+    }
+    
+    #slogan{
+      float: left;
+      position: absolute;
+      top: 250px;
+      left: 100px;
+      box-sizing: border-box;
+      font-weight: 700;
+      padding-top: 30px;
+    }
+    
+    #slogan:hover{
+      background-color: #6B8E5A;
+      color: #fff;
+      -moz-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    
+    #main_image{
+      display: inline-block;
+      position: absolute;
+      top: 135px;
+      right: 80px;
+      opacity: 0;
+    }
+    
+    #authentic{
+      width: 960px;
+      height: 100px;
+      margin-top: 550px;
+      box-sizing: border-box;
+      background-color: #6B8E5A;
+      font-size: 1.4em;
+      text-align: center;
+      padding-top: 30px;
+    }
+    
+    .features{
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 100px;
+      opacity: 0;
+    }
+    
+/*  Requirement 6: use of animated opacity property  */
+    @-webkit-keyframes feature_anim{
+      0%{opacity: 0;}
+      100%{opacity: 1;}
+    }
+    @keyframes feature_anim{
+      0%{opacity: 0;}
+      100%{opacity: 1;}
+    }
+    
+    #main_image{
+      -moz-animation: feature_anim 1.5s 0.1s ease-in-out forwards;
+      -web-animation: feature_anim 1.5s 0.1s ease-in-out forwards;
+      animation: feature_anim 1.5s 0.1s ease-in-out forwards;
+    }
+    
+    #feature1{
+      -moz-animation: feature_anim 1s 0.2s ease-in-out forwards;
+      -web-animation: feature_anim 1s 0.2s ease-in-out forwards;
+      animation: feature_anim 1s 0.2s ease-in-out forwards;
+    }
+    #feature2{
+      -moz-animation: feature_anim 1s 0.5s ease-in-out forwards;
+      -web-animation: feature_anim 1s 0.5s ease-in-out forwards;
+      animation: feature_anim 1s 0.5s ease-in-out forwards;
+    }    
+    #feature3{
+      -moz-animation: feature_anim 1s 0.8s ease-in-out forwards;
+      -web-animation: feature_anim 1s 0.8s ease-in-out forwards;
+      animation: feature_anim 1s 0.8s ease-in-out forwards;
+    }       
+    
+    
+    #gourmet_coffee, #seasonal_drink, #sweet_afternoon{
+      float: right;
+      position: absolute;
+      right: 150px;
+      box-sizing: border-box;
+      font-weight: 700;
+      padding: 50px 20px 40px 30px;
+      -moz-transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+    }
+    
+    #gourmet_coffee{top: 740px;}
+    #seasonal_drink{top:1040px;}
+    #sweet_afternoon{top:1340px;}
+    
+/*  Requirement 4: use of CSS3 transform  */
+    #gourmet_coffee:hover{
+      background-color: #6B8E5A;
+      color: #fff;
+      -moz-transform: rotate(20deg);
+      -webkit-transform:rotate(20deg);
+      transform: rotate(20deg);
+    }
+    
+    #seasonal_drink:hover{
+      background-color: #6B8E5A;
+      color: #fff;
+      -moz-transform: rotate(-20deg);
+      -webkit-transform:rotate(-20deg);
+      transform: rotate(-20deg);      
+    }
+    
+    #sweet_afternoon:hover{
+      background-color: #6B8E5A;
+      color: #fff;
+      -moz-transform: rotate(20deg);
+      -webkit-transform:rotate(20deg);
+      transform: rotate(20deg);
+    }
+    
+    footer{
+      background-color: #6B8E5A;
+      height: 120px;
+      clear: both;
+      text-align: center;
+      padding-top: 10px;
+      line-height: 1.1;
+      font-weight: 700;
+    }
+    
+  </style>
+  
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <div id="logo_name">
+        <p>Nina's Cafe</p>
+      </div>
+      <div id="coffee_bean">
+        <img src="images/coffee_bean.png" alt="coffee bean" />
+      </div>
+      <nav>
+        <ul id="navlist">
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Membership</a></li>
+          <li><a href="#">Rewards</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Home</a></li>
+        </ul>
+      </nav> 
+    </header>
+     
+    <section>
+    <div id="slogan" class="tag_box">A Good Day Starts From A Good Coffee</div>
+    <div id="main_image"><img src="images/main_image.jpg" alt="main picture" width="600" height="400" /></div>
+    <div id="authentic">Authentically Delicious : Winnipeg local's favourite</div>
+    </section>
+
+    <section>
+    <div id="feature1" class="features"><img src="images/gourmet_coffee.jpg" alt="gourmet coffee" width="512" height="288" /></div>
+    <div id="gourmet_coffee" class="tag_box">Gourmet Coffee</div>
+    <div id="feature2" class="features"><img src="images/seasonal_drink.jpg" alt="seasonal drink" width="512" height="288" /></div>
+    <div id="seasonal_drink" class="tag_box">Seasonal Drink</div>
+    <div id="feature3" class="features"><img src="images/sweet_afternoon.jpg" alt="sweet afternoon" width="512" height="288" /></div>
+    <div id="sweet_afternoon" class="tag_box">Sweet Afternoon</div>
+    </section>    
+    
+    <footer>
+      <p>We open daily from 6am to 6pm</p>
+      <p>Call us at 204-914-1234</p>
+      <p>Find us at 123 Plane Street</p>
+    </footer>
+  </div>
+</body>
+</html>
