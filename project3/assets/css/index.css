@@ -9,8 +9,8 @@
 @font-face{
 	font-family: 'BluuNext'; 
 	src: url('../fonts/BluueNextBold/Bluunext-bold.eot');
-	src:url('../fonts/BluueNextBold/Bluunext-bold.woff') format('woff'),
-		 url('../fonts/BluueNextBold/Bluunext-bold.ttf') format('truetype'),
+	src:url('../fonts/BluueNextBold/bluunext-bold.woff') format('woff'),
+		 url('../fonts/BluueNextBold/bluunext-bold.ttf') format('truetype'),
 		 url('../fonts/BluueNextBold/Bluunext-bold.svg') format('svg');
 }
 
