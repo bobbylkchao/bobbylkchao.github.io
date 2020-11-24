@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+
+/////////////////////////////////////
+//       Bobby (LINGKAI) Chao      //
+//       Advanced HTML5&CSS3       //
+//           Asssignment2          //
+//             Nov.2020            //
+//       Instructor: B. Scott      //
+/////////////////////////////////////
+
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bobby Chao - Asssignment2</title>
+	<link rel="stylesheet" href="./assets/css/index.css">
+	<!--import a blank js, to prevent transform from page load-->
+	<script src="./assets/js/index.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header-pc"><!--header for pc start-->
+			<nav>
+				<ul>
+					<li class="nav-pc-li"><!--li start-->
+						<a href="index.html" title="open index page">
+							<img src="./assets/img/logo.png" alt="logo"/>
+						</a>
+					</li><!--li end-->
+					<li class="vho"><li>
+					<li class="nav-pc-li"><!--li start-->
+						<a href="index.html" title="open index page">
+							<img src="./assets/img/icon-home.png" alt="home"/>
+						</a>
+					</li><!--li end-->
+					<li class="vho"><li>
+					<li class="nav-pc-li"><!--li start-->
+						<a href="#" title="open Platform 9 ¾ page">
+							<img src="./assets/img/icon-platform.png" alt="Platform"/>
+						</a>
+					</li><!--li end-->
+					<li class="vho"><li>
+					<li class="nav-pc-li"><!--li start-->
+						<a href="#" title="open DIAGON ALLEY page">
+							<img src="./assets/img/icon-diagon.png" alt="Diagon Alley"/>
+						</a>
+					</li><!--li end-->
+					<li class="vho"><li>
+					<li class="nav-pc-li"><!--li start-->
+						<a href="#" title="open HOGWARTS page">
+							<img src="./assets/img/icon-hogwarts.png" alt="Hogwarts"/>
+						</a>
+					</li><!--li end-->
+				</ul>
+			</nav>
+			<img class="hat" src="./assets/img/hat.png" alt="magic hat"/>
+		</header><!--header for pc end-->
+		
+		<header id="header-mobile"><!--header for mobile start-->
+			<nav class="top">
+				<ul>
+					<li>
+						<a href='index.html'><img src="./assets/img/logo.png" alt="logo"/></a>
+					</li>
+				</ul>
+			</nav>
+		</header><!--header for mobile end-->
+		
+		<nav id="mobile-nav-bottom"><!--todo-->
+				<ul>
+					<li><a href="#" title="Home">Home</a></li>
+					<li><a href="#" title="Explore">Explore</a></li>
+				</ul>
+		</nav>
+		
+		<section>
+			<div class="section-top-1"><!--top1 start-->
+				<div class="left">
+					<h1 class="articleTitle animationN1">A Wonderful adventure</h1>
+					<h2 class="articleContent">Explore the magical world of Harry Potter with Bobby Chao.</h2>
+					<a class="btn">Read More</a>
+				</div>
+				<div class="right">
+					<!--video element start-->
+					<video controls poster="./assets/img/video-mask-image.png">
+						<source src="./assets/video/video.mp4" type="video/mp4">
+						<source src="./assets/video/video.ogv" type="video/ogg">
+						<source src="./assets/video/video.webm" type="video/webm">
+						<!--for thoese browsers which dose not support the video tag-->
+						Your browser does not support the video tag.
+					</video>
+					<!--video element end-->
+				</div>
+				<div class="clearFix"></div>
+			</div><!--top1 end-->
+			
+			<div class="section-top-2"><!--top2 start-->
+				<div class="title"><!--top2 title start-->
+					<!--Dividing line-->
+					<div class="line"></div>
+					<div class="subtitle animationN1"><h1 class="articleTitle">Area to explore</h1></div>
+					<!--Dividing line-->
+					<div class="line"></div>
+					<div class="clearFix"></div>
+				</div><!--top2 title end-->
+				<div class="h-images"><!--top2 h-images start-->
+					<div class="h-i-1">
+						<div>Platform 9 ¾</div>
+					</div>
+					<div class="h-i-2">
+						<div>Diagon Alley</div>
+					</div>
+					<div class="h-i-3">
+						<div>Hogwarts</div>
+					</div>
+					<div class="h-i-4">
+						<div>Dark Forest</div>
+					</div>
+				</div><!--top2 h-images start-->
+			</div><!--top2 start-->
+			
+			<div class="section-top-3"><!--top3 start-->
+				<!--left characters image-->
+				<div class="left">
+					<img src="./assets/img/icon-characters.png" alt="characters"/>
+				</div>
+				<!--right content-->
+				<div class="right">
+					<h1 class="articleTitle animationN1">Who you wanna be?</h1>
+					<h2 class="articleContent">Harry Potter, Ronald Weasley, or Hermione Granger?</h2>
+					<a class="btn">Choose</a>
+				</div>
+				<div class="clearFix"></div>
+			</div><!--top3 start-->
+			
+		</section>
+		
+		<footer>&copy; 2020 BOBBY(LINGKAI) CHAO</footer>
+		<br><br><br><br>
+	</div>
+	<!--for float bg image div-->
+	<div id="bgImage"></div>
+</body>
+</html>
