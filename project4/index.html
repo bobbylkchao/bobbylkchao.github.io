@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--
+
+/////////////////////////////////////
+//       Bobby (LINGKAI) Chao      //
+//       Advanced HTML5&CSS3       //
+//           Asssignment2          //
+//             Nov.2020            //
+//       Instructor: B. Scott      //
+/////////////////////////////////////
+
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bobby Chao - Asssignment2</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<!--DIV to include left and right blocks, and maintain the width-->
+			<div class="header-content-div">
+				
+				<!--left block-->
+				<div class="left-block"></div>
+				
+				<div class="right-block"><!--right block start-->
+					<nav>
+						<ul class="pc">
+							<li><a href="#" title="A-Z Index">A-Z Index</a></li>
+							<li><a href="#" title="Directory">Directory</a></li>
+							<li><a href="#" title="Maps">Maps</a></li>
+							<li><a href="#" title="Giving">Giving</a></li>
+							<li><a href="#" title="Email">Email</a></li>
+						</ul>
+						<div class="mobile"></div>
+					</nav>
+				</div><!--right block end-->
+				
+				<!--clear float-->
+				<div class="clearFloat"></div>
+			</div>
+		</header>
+		
+		<section>
+			
+			<div id="mainly-menu"><!--menu start-->
+				<nav>
+					<ul>
+						<li><a href="#" title="Admissions">Admissions</a></li>
+						<li><a href="#" title="Academics">Academics</a></li>
+						<li><a href="#" title="Campus Life">Campus</a></li>
+						<li><a href="#" title="About UWinnipeg">About</a></li>
+					</ul>
+				</nav>
+			</div><!--menu end-->
+			
+			<div id="banner-images"><!--banner images start-->
+				<div class="b-i-1">
+					<div class="b-i-alt">Celebrating Exceptional Students</div>
+				</div>
+				<div class="b-i-2">
+					<div class="b-i-alt">Online Event: Monday, November 30 at 12:30 pm</div>
+				</div>
+				<div class="b-i-3">
+					<div class="b-i-alt">Geographer’s NASA asteroid mission results in publication</div>
+				</div>
+				<div class="b-i-4">
+					<div class="b-i-alt">2020 Thrive Week: November 23-27</div>
+				</div>
+			</div><!--banner images end-->
+			
+			<div id="video-block"><!--video-block start-->
+				<!--video element start-->
+					<video controls poster="./assets/img/video-mask.jpg">
+						<source src="./assets/video/uofw.mp4" type="video/mp4">
+						<source src="./assets/video/uofw.Ogg" type="video/ogg">
+						<source src="./assets/video/uofw.webm" type="video/webm">
+						<!--for thoese browsers which dose not support the video tag-->
+						Your browser does not support the video tag.
+					</video>
+					<!--video element end-->
+			</div><!--video-block end-->
+			
+			<div id="h-article-blocks"><!--3 h-article-blocks start-->
+				<!--include 3 horizontal article blocks-->
+				
+				<div class="h-a-b-animation"><!--block 1 start-->
+					<!--title-->
+					<div class="h-a-b-title h-a-b-t-bg-1"></div>
+					<!--body-->
+					<div class="h-a-b-body">
+						<h3 class="title"><a href="#" title="Native leaders and Thanksgiving">Native leaders and Thanksgiving</a></h3>
+						<div class="content"><p>At a recent event a panel of Indigenous speakers discussed how Indigenous communities mark Thanksgiving.</p></div>
+						<div class="readmore"><a href="#" title="Read Story">Read Story</a></div>
+					</div>
+				</div><!--block 1 end-->
+				
+				<div class="h-a-b-animation"><!--block 2 start-->
+					<!--title-->
+					<div class="h-a-b-title h-a-b-t-bg-2"></div>
+					<!--body-->
+					<div class="h-a-b-body">
+						<h3 class="title"><a href="#" title="Native leaders and Thanksgiving">Listening to Wampanoag voices</a></h3>
+						<div class="content"><p>An online exhibit at the Peabody Museum lends contemporary Wampanoag voices to historic objects.</p></div>
+						<div class="readmore"><a href="#" title="Read Story">Read Story</a></div>
+					</div>
+				</div><!--block 2 end-->
+				
+				<div class="h-a-b-animation"><!--block 3 start-->
+					<!--title-->
+					<div class="h-a-b-title h-a-b-t-bg-3"></div>
+					<!--body-->
+					<div class="h-a-b-body">
+						<h3 class="title"><a href="#" title="Native leaders and Thanksgiving">"Thanks" and "giving"</a></h3>
+						<div class="content"><p>Experts say that talking about thanks and giving can help your family tune in to the real meaning of the season.</p></div>
+						<div class="readmore"><a href="#" title="Read Story">Read Story</a></div>
+					</div>
+				</div><!--block 3 end-->
+				
+				<!--include 3 horizontal article blocks-->
+			</div><!--3 h-article-blocks end-->
+		</section>
+		
+		<footer>
+			<p>Coding by BOBBY CHAO</p>
+		</footer>
+	</div>
+</body>
+</html>
