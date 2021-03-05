@@ -41,6 +41,7 @@
       var resultsbox;
       var lat;
       var long;
+      var accu; 
       
       window.onload = function(){
         // get the results box
@@ -56,15 +57,18 @@
         }
       }// end window.onload
       
-      
+      // Note: If testing geolocation on a Website, the site MUST be using secure connection. 
+      // must be 'https://'     
       function getPos(position){
         // the position paramter will contain a coords property, which holds the latitude
         // and longitude of your browser/devices location. 
         lat = position.coords.latitude;
         long = position.coords.longitude;
+        accu = position.coords.accuracy;
         
         resultsbox.innerHTML = "Latitude: " + lat + "<br />"
         resultsbox.innerHTML += "Longitude: " + long + "<br />"
+        resultsbox.innerHTML += "Accuracy: " + accu + "<br />"
       }
     </script>
       
