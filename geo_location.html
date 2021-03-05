@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Geolocation</title>
+    <meta charset="utf-8" />
+    <style>
+      body{
+        font-family: Tahoma, Arial, sans-serif;
+        font-size: 16px;
+      }
+      
+      #results{
+        border: 1px solid #000;
+        background-color: #eee;
+        width: 300px;
+        min-height: 150px;
+        border-radius: 6px;
+        padding: 8px;
+      }
+      
+    </style>
+    
+
+  </head>
+
+  <body>
+    <h1>GeoLocation</h1>
+    <p>
+      <button id="show_loc">Show Location on the Map</button>
+    </p>
+    <div id="results"></div>
+
+   
+   
+    <noscript>
+      This page requires JavaScript. Please enable it in your browser. 
+    </noscript>
+  
+    <script>
+     // JavaScript goes here.
+      var resultsbox;
+      var lat;
+      var long;
+      
+      window.onload = function(){
+        // get the results box
+        resultsbox = document.getElementById("results");
+        
+        // Get the location. 
+        if(navigator.geolocation){
+          // Good to go. 
+          navigator.geolocation.getCurrentPosition(getPos);
+        }
+        else{
+          alert("Your browser does not support geolocation.");
+        }
+      }// end window.onload
+      
+      
+      function getPos(position){
+        // the position paramter will contain a coords property, which holds the latitude
+        // and longitude of your browser/devices location. 
+        lat = position.coords.latitude;
+        long = position.coords.longitude;
+        
+        resultsbox.innerHTML = "Latitude: " + lat + "<br />"
+        resultsbox.innerHTML += "Longitude: " + long + "<br />"
+      }
+    </script>
+      
+  
+  </body>
+
+</html>
