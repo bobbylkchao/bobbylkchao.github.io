@@ -65,10 +65,12 @@
         lat = position.coords.latitude;
         long = position.coords.longitude;
         accu = position.coords.accuracy;
+        alti = position.coords.altitude;
         
-        resultsbox.innerHTML = "Latitude: " + lat + "<br />"
-        resultsbox.innerHTML += "Longitude: " + long + "<br />"
-        resultsbox.innerHTML += "Accuracy: " + accu + "<br />"
+        resultsbox.innerHTML = "Latitude: " + lat + "<br />";
+        resultsbox.innerHTML += "Longitude: " + long + "<br />";
+        resultsbox.innerHTML += "Accuracy: " + accu + "<br />";
+        resultsbox.innerHTML += "Altitude: " + alti + "<br />";
       }
     </script>
       
