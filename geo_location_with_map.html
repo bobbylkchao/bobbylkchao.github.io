@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Geolocation</title>
+    <meta charset="utf-8" />
+    <style>
+      body{
+        font-family: Tahoma, Arial, sans-serif;
+        font-size: 16px;
+      }
+      
+      #results{
+        border: 1px solid #000;
+        background-color: #eee;
+        width: 300px;
+        min-height: 150px;
+        border-radius: 6px;
+        padding: 8px;
+      }
+      
+    </style>
+    
+
+  </head>
+
+  <body>
+    <h1>GeoLocation</h1>
+    <p>
+      <button id="show_loc">Show Location on the Map</button>
+    </p>
+    <div id="results"></div>
+    <div id="googlemap">
+    
+    </div>
+   
+   
+    <noscript>
+      This page requires JavaScript. Please enable it in your browser. 
+    </noscript>
+  
+    <script>
+     // JavaScript goes here.
+      var resultsbox;
+      var lat;
+      var long;
+      var accu;
+      var mybutt;
+      
+      window.onload = function(){
+        // get the results box
+        resultsbox = document.getElementById("results");
+        
+        // get button object
+        mybutt = document.getElementById("show_loc");
+        
+        // Detect click on the button
+        mybutt.addEventListener('click',function(){
+          showMap();
+        });
+        
+        
+        // Get the location. 
+        if(navigator.geolocation){
+          // Good to go. 
+          navigator.geolocation.getCurrentPosition(getPos);
+        }
+        else{
+          alert("Your browser does not support geolocation.");
+        }
+      }// end window.onload
+      
+      // Note: If testing geolocation on a Website, the site MUST be using secure connection. 
+      // must be 'https://'     
+      function getPos(position){
+        // the position paramter will contain a coords property, which holds the latitude
+        // and longitude of your browser/devices location. 
+        lat = position.coords.latitude;
+        long = position.coords.longitude;
+        accu = position.coords.accuracy;
+        alti = position.coords.altitude;
+        speed = position.coords.speed;
+        
+        resultsbox.innerHTML = "Latitude: " + lat + "<br />";
+        resultsbox.innerHTML += "Longitude: " + long + "<br />";
+        resultsbox.innerHTML += "Accuracy: " + accu + "<br />";
+        resultsbox.innerHTML += "Altitude: " + alti + "<br />";
+        resultsbox.innerHTML += "Speed: " + speed + "<br />";
+      }
+      
+      function showMap(){
+        var mapDiv = document.getElementById("googlemap");
+        mapDiv.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20536.99516941811!2d' + long + '!3d' + lat + '!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1615906967055!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>';
+      }
+      /*
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20536.99516941811!2d-97.16797636044922!3d49.95276895000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1615906967055!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      */
+      
+    </script>
+      
+  
+  </body>
+
+</html>
