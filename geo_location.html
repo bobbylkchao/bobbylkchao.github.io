@@ -66,11 +66,13 @@
         long = position.coords.longitude;
         accu = position.coords.accuracy;
         alti = position.coords.altitude;
+        speed = position.coords.speed;
         
         resultsbox.innerHTML = "Latitude: " + lat + "<br />";
         resultsbox.innerHTML += "Longitude: " + long + "<br />";
         resultsbox.innerHTML += "Accuracy: " + accu + "<br />";
         resultsbox.innerHTML += "Altitude: " + alti + "<br />";
+        resultsbox.innerHTML += "Speed: " + speed + "<br />";
       }
     </script>
       
