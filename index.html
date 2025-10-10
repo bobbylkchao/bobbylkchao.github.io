@@ -1,17 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
- <head> 
-  <meta charset="utf-8" /> 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
-  <title>Bobby Chao | System Architect and Sr. Software Engineer</title> 
-  <meta name="keywords" content="winnipeg fullstack developer,winnipeg system architect,winnipeg senior full stack developer,winnipeg hybrid development, winnipeg high performance development,serverless development, winnipeg fullstack developer looking for job, winnipeg system architect looking for job,React
-    Native, SASS, ES6/TypeScript, Cordova, NodeJS, GraphQL" /> 
-  <meta name="description" content="Live in Winnipeg, Canada. System architect and Senior full stack developer. Focusing on the architecture and development of high-performance and high-concurrency modern mobile Apps" /> 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="refresh" content="1; url=https://github.com/bobbylkchao" />
-  <style>		body {			font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;			font-size: calc(10px + 0.33vw);			-webkit-font-smoothing: antialiased;			padding: 2vh;			color: #121314;		}		#root {			margin: 0 auto;			max-width: 768px;		}		b {			font-weight: 400;		}		h1 {			font-size: 4.5em;			font-weight: 500;			margin-bottom: 0;		}		p,		li {			font-size: 1.6em;			font-weight: 300;			line-height: 1.4;			max-width: 26em;		}		a {			text-decoration: none;			color: #121314;			position: relative;		}		a:after {			content: "";			position: absolute;			z-index: -1;			top: 60%;			left: -0.1em;			right: -0.1em;			bottom: 0;			transition: top 200ms cubic-bezier(0, .8, .13, 1);			background-color: rgba(79, 192, 141, 0.5);		}		a:hover:after {			top: 0%;		}		div.hide {			display: none;		}		.heading {			font-weight: 500;			font-size: 2.2em		}		.flex {			display: flex;			align-items: center;			flex-direction: row;		}		.flexDiv {			width: 250px;			height: 30px;			padding: 10px;			text-align: left;			font-size: 1.6em;			font-weight: 300;			line-height: 1.4;		}		.flex div:hover {			cursor: pointer;		}		.menuActive {			font-weight: 500 !important;		}		.hr {			width: 100%;			border-top: 1px solid lightgray;			margin-top: 2vh;		}		table {			border-collapse: collapse;			border: 1px solid #999;			width: 100%;		}		table td,		th {			padding: 5px;			vertical-align: middle;			border: 1px solid #999;			font-size: 1.6em;			font-weight: 300;			text-align: center;		}		table th {			font-weight: 500;		}		.well {			background-color: #efefef;			padding: 5px;			border-radius: 4px;		}		.well.Active {			background-color: #d6ffd6;			padding: 5px;			border-radius: 4px;		}	</style>
- </head>
- <body> 
-  <p style='text-align:center'><a href="https://github.com/bobbylkchao">Redirect to Bobby Chao's Github</a></p>
- </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bobby Chao | Personal Homepage</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Bobby Chao - Technical Lead and Software Architect with 15+ years of experience in system architecture, scalable applications, and GenAI integration. Passionate about mentoring engineers and driving technical innovation.">
+<meta name="keywords" content="Bobby Chao, Technical Lead, Software Architect, GenAI, Node.js, React, Microservices, AWS, GCP, Scalable Systems, Performance Optimization">
+<meta name="author" content="Bobby Chao">
+
+<!-- Open Graph / Social Share -->
+<meta property="og:title" content="Bobby Chao | Technical Lead & Software Architect">
+<meta property="og:description" content="Technical Lead and Software Architect with 15+ years of experience building scalable systems and exploring GenAI technologies.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.bobbylkchao.com/">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bobby Chao | Technical Lead & Software Architect">
+<meta name="twitter:description" content="Technical Lead and Software Architect with 15+ years of experience building scalable systems and exploring GenAI technologies.">
+
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background: #0d0d0d; color: #f0f0f0; scroll-behavior: smooth; overflow-x: hidden; }
+
+    canvas#particles { position: fixed; top:0; left:0; width:100%; height:100%; z-index:-1; }
+
+    .container { width: 90%; max-width: 1000px; margin: auto; padding: 50px 0; }
+
+    header { text-align: center; padding: 150px 20px 50px; position: relative; z-index:1; }
+    header h1 { font-size: 3rem; color: #00ffff; letter-spacing: 2px; text-shadow: 0 0 20px #00ffff; }
+    header p { font-size: 1.2rem; color: #ccc; margin-top: 10px; }
+    .social-links { margin-top: 20px; }
+    .social-links a { margin: 0 10px; color: #00ffff; font-size: 1.5rem; transition: 0.3s; }
+    .social-links a:hover { color: #fff; transform: scale(1.2); }
+
+    section { padding: 60px 0; border-top: 1px solid #222; }
+    section h2 { font-size: 2rem; color: #00ffff; margin-bottom: 30px; text-align: center; position: relative; }
+    section h2::after { content:""; width:50px; height:3px; background:#00ffff; display:block; margin:10px auto 0; border-radius:2px; }
+
+    .about, .experience, .skills { max-width: 800px; margin: auto; line-height: 1.6; font-size:1.1rem; opacity:0; transform: translateY(30px); transition: all 0.8s ease-out; }
+
+    .about.visible, .experience.visible, .skills.visible { opacity:1; transform: translateY(0); }
+
+    .job { margin-bottom: 30px; }
+    .job h3 { color: #fff; font-size: 1.3rem; }
+    .job span { color: #00cccc; font-size: 0.9rem; }
+
+    .skills-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px; }
+    .skill { background: #111; border: 1px solid #00ffff; padding: 10px 20px; border-radius: 20px; cursor: default; animation: float 4s ease-in-out infinite; transition: 0.3s; }
+    .skill:hover { background: #00ffff; color: #0d0d0d; transform: scale(1.2) rotate(5deg); box-shadow: 0 0 15px #00ffff; }
+
+    @keyframes float { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-5px);} }
+
+    footer { text-align: center; padding: 40px 0; color: #555; font-size: 0.9rem; }
+    footer a {
+      color: #555;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    footer a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #00ffff;
+      transform: scale(1.1);
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<header>
+    <h1>Bobby Chao</h1>
+    <p>Technical Lead | Software Architect | GenAI Enthusiast</p>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/bobbylkchao/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/bobbylkchao/" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+        <p>I am a Technical Lead and Software Architect with over 15 years of experience building scalable and maintainable systems from scratch. Passionate about emerging technologies, particularly GenAI, I explore practical ways to integrate AI into products to enhance business outcomes. I enjoy mentoring engineers, leading technical discussions, and contributing hands-on to complex projects.</p>
+        <p>Outside of work, I actively participate in volunteer initiatives, leveraging my skills to make a positive impact on the community.</p>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="experience">
+        <div class="job">
+            <h3>Technical Lead | Priceline.com - Canada</h3>
+            <span>Jan 2022 - Present</span>
+            <p>Architected and built foundational systems from scratch as one of the first technical leaders, defining technology vision and architecture to enable long-term scalability and business growth. Proactively explore emerging technologies, such as GenAI, to identify opportunities for enhancing products and driving business outcomes. Lead the engineering team to achieve technical objectives, ensuring high-performance, scalable, and reliable systems through hands-on guidance, strategic refactoring, and performance/security analysis. Drive technical evolution within the organization, facilitating high-level technical discussions and knowledge-sharing with senior engineers and leadership to shape the company's technology direction.</p>
+        </div>
+        <div class="job">
+            <h3>Development & Technical Manager</h3>
+            <span>Nov 2018 - Jan 2022</span>
+            <p>Led architecture and development of a distributed mobile platform serving millions of users globally, ensuring scalability, high availability, and performance during growth.</p>
+        </div>
+        <div class="job">
+            <h3>Technical Lead / Development Manager</h3>
+            <span>Apr 2015 - Nov 2018</span>
+            <p>Designed backend systems for 1M+ DAU, built distributed architecture across 4 global data centers, and led cross-functional teams to deliver reliable game services.</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Expertise & Value</h2>
+    <div class="skills">
+        <div class="skills-list">
+            <div class="skill">System Architecture</div>
+            <div class="skill">Microservices</div>
+            <div class="skill">Event-driven Architecture</div>
+            <div class="skill">Scalable API Design</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">React / React Native</div>
+            <div class="skill">TypeScript</div>
+            <div class="skill">GCP / AWS</div>
+            <div class="skill">Docker & Kubernetes</div>
+            <div class="skill">CI/CD</div>
+            <div class="skill">Message Queues (Kafka, AWS SQS)</div>
+            <div class="skill">Amazon Connect</div>
+            <div class="skill">BigQuery</div>
+            <div class="skill">GenAI Integration</div>
+            <div class="skill">Performance & Security Analysis</div>
+            <div class="skill">Mentoring & Leadership</div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Bobby Chao | <a href="mailto:bobbylkchao@gmail.com">bobbylkchao@gmail.com</a>
+</footer>
+
+<script>
+    // Scroll animation
+    const faders = document.querySelectorAll('.about, .experience, .skills');
+    const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer){
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, appearOptions);
+    faders.forEach(fader => appearOnScroll.observe(fader));
+
+    // Particle background with connection lines
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let particlesArray = [];
+    const mouse = { x: null, y: null, radius: 100 };
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    window.addEventListener('mousemove', e => { mouse.x = e.x; mouse.y = e.y; });
+    window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; initParticles(); });
+
+    class Particle {
+        constructor(){
+            this.x = Math.random()*canvas.width;
+            this.y = Math.random()*canvas.height;
+            this.size = Math.random()*2+1;
+            this.speedX = Math.random()*1-0.5;
+            this.speedY = Math.random()*1-0.5;
+        }
+        update(){ this.x+=this.speedX; this.y+=this.speedY; 
+            if(this.x>canvas.width) this.x=0; if(this.x<0) this.x=canvas.width;
+            if(this.y>canvas.height) this.y=0; if(this.y<0) this.y=canvas.height;
+        }
+        draw(){ ctx.fillStyle='#00ffff'; ctx.beginPath(); ctx.arc(this.x,this.y,this.size,0,Math.PI*2); ctx.fill(); }
+    }
+
+    function initParticles(){
+        particlesArray=[];
+        for(let i=0;i<150;i++) particlesArray.push(new Particle());
+    }
+
+    function connectParticles(){
+        for(let a=0;a<particlesArray.length;a++){
+            for(let b=a;b<particlesArray.length;b++){
+                let dx=particlesArray[a].x - particlesArray[b].x;
+                let dy=particlesArray[a].y - particlesArray[b].y;
+                let distance=Math.sqrt(dx*dx + dy*dy);
+                if(distance<120){
+                    ctx.strokeStyle='rgba(0,255,255,'+ (1-distance/120) +')';
+                    ctx.lineWidth=1;
+                    ctx.beginPath();
+                    ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+                    ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+                    ctx.stroke();
+                }
+            }
+        }
+    }
+
+    function animate(){
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        particlesArray.forEach(p=>{ p.update(); p.draw(); });
+        connectParticles();
+        requestAnimationFrame(animate);
+    }
+
+    initParticles();
+    animate();
+</script>
+
+</body>
 </html>
