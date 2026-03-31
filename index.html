@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bobby Chao | Personal Homepage</title>
+<title>Bobby Chao | Technical Lead &amp; AI Systems Architect</title>
 
 <!-- SEO Meta Tags -->
-<meta name="description" content="Bobby Chao - Technical Lead and Software Architect with 15+ years of experience in system architecture, scalable applications, and GenAI integration. Passionate about mentoring engineers and driving technical innovation.">
-<meta name="keywords" content="Bobby Chao, Technical Lead, Software Architect, GenAI, Node.js, React, Microservices, AWS, GCP, Scalable Systems, Performance Optimization">
+<meta name="description" content="Bobby Chao — AI Systems Architect & Technical Lead. 15+ years designing scalable systems; focus on AI agents, LLM orchestration, real-time voice, and production AI platforms. Creator of the open-source AI Phone Agent.">
+<meta name="keywords" content="Bobby Chao, Technical Lead, Systems Architect, AI Agents, LLM Orchestration, Voice AI, OpenAI Realtime, AI Phone Agent, Microservices, AWS, GCP, Production AI">
 <meta name="author" content="Bobby Chao">
 
 <!-- Open Graph / Social Share -->
-<meta property="og:title" content="Bobby Chao | Technical Lead & Software Architect">
-<meta property="og:description" content="Technical Lead and Software Architect with 15+ years of experience building scalable systems and exploring GenAI technologies.">
+<meta property="og:title" content="Bobby Chao | Technical Lead & AI Systems Architect">
+<meta property="og:description" content="Building production-grade AI platforms: agent architectures, LLM orchestration, real-time voice. Creator of AI Phone Agent — open-source voice agents for Twilio & Amazon Connect.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.bobbylkchao.com/">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Bobby Chao | Technical Lead & Software Architect">
-<meta name="twitter:description" content="Technical Lead and Software Architect with 15+ years of experience building scalable systems and exploring GenAI technologies.">
+<meta name="twitter:title" content="Bobby Chao | Technical Lead & AI Systems Architect">
+<meta name="twitter:description" content="AI Systems Architect: agents, LLM orchestration, real-time voice. Open-source AI Phone Agent for production telephony + OpenAI Realtime.">
 
 <style>
     * { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
@@ -43,6 +43,51 @@
     .about, .experience, .skills { max-width: 800px; margin: auto; line-height: 1.6; font-size:1.1rem; opacity:0; transform: translateY(30px); transition: all 0.8s ease-out; }
 
     .about.visible, .experience.visible, .skills.visible { opacity:1; transform: translateY(0); }
+
+    header .tagline-main {
+        font-size: 1.2rem;
+        color: #e0e0e0;
+        margin-top: 14px;
+        line-height: 1.55;
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 12px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+    }
+    @media (max-width: 640px) {
+        header .tagline-main { font-size: 1rem; line-height: 1.5; }
+    }
+
+    .about p { margin-bottom: 1em; }
+    .about p:last-of-type { margin-bottom: 0; }
+
+    .project-highlight {
+        margin-top: 28px;
+        padding: 22px 26px;
+        background: #111;
+        border: 1px solid rgba(0, 255, 255, 0.35);
+        border-radius: 12px;
+        border-left: 4px solid #00ffff;
+        text-align: left;
+    }
+    .project-highlight h3 {
+        color: #00ffff;
+        font-size: 1.15rem;
+        margin-bottom: 12px;
+        font-weight: 600;
+    }
+    .project-highlight p { margin-bottom: 0.85em; }
+    .project-highlight p:last-child { margin-bottom: 0; }
+    .project-highlight a {
+        color: #00ffff;
+        text-decoration: none;
+        font-weight: 600;
+        border-bottom: 1px solid rgba(0, 255, 255, 0.5);
+        transition: color 0.2s, border-color 0.2s;
+    }
+    .project-highlight a:hover { color: #fff; border-bottom-color: #fff; }
 
     .job { margin-bottom: 30px; }
     .job h3 { color: #fff; font-size: 1.3rem; }
@@ -74,7 +119,7 @@
 
 <header>
     <h1>Bobby Chao</h1>
-    <p>Technical Lead | Software Architect | GenAI Enthusiast</p>
+    <p class="tagline-main">Technical Lead | Systems Architect | Building AI Agents &amp; Voice Systems | Creator of AI Phone Agent</p>
     <div class="social-links">
         <a href="https://www.linkedin.com/in/bobbylkchao/" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/bobbylkchao/" target="_blank"><i class="fab fa-github"></i></a>
@@ -84,8 +129,15 @@
 <section id="about">
     <h2>About Me</h2>
     <div class="about">
-        <p>I am a Technical Lead and Software Architect with over 15 years of experience building scalable and maintainable systems from scratch. Passionate about emerging technologies, particularly GenAI, I explore practical ways to integrate AI into products to enhance business outcomes. I enjoy mentoring engineers, leading technical discussions, and contributing hands-on to complex projects.</p>
-        <p>Outside of work, I actively participate in volunteer initiatives, leveraging my skills to make a positive impact on the community.</p>
+        <p>I am an AI systems architect and technical lead with <strong>15+ years</strong> designing and scaling complex, high-performance systems from the ground up. I focus on production-grade platforms that connect solid architecture with real-world delivery — from distributed backends to modern <strong>AI-driven applications</strong>.</p>
+        <p>My recent work centers on <strong>AI application architecture</strong>: agent-based systems, <strong>LLM orchestration</strong>, tool use, and <strong>real-time voice</strong> (telephony-grade latency and reliability). I care about agents that go beyond chat — systems that interpret intent, take action, and run workflows you can ship and operate.</p>
+        <p>I pair deep technical design with hands-on execution, with emphasis on scalability, reliability, and turning emerging AI capabilities into <strong>production-ready</strong> systems. I mentor engineers, lead technical direction, and stay close to the code where it matters.</p>
+        <p>Outside of work, I contribute to volunteer and community initiatives, using technology for positive social impact.</p>
+        <div class="project-highlight">
+            <h3>Open source: AI Phone Agent</h3>
+            <p>I maintain <a href="https://github.com/bobbylkchao/ai-phone-agent" target="_blank" rel="noopener noreferrer">AI Phone Agent</a> — a production-oriented Node.js / TypeScript starter for <strong>real-time voice agents</strong> on real phone calls, built on OpenAI Realtime with <strong>Twilio Media Streams</strong> and <strong>Amazon Connect</strong>. It demonstrates end-to-end patterns: streaming audio, function tools (transfer, hang up, structured intake), optional MCP-backed tools, and operational endpoints for tunnels and monitoring.</p>
+            <p><a href="https://github.com/bobbylkchao/ai-phone-agent" target="_blank" rel="noopener noreferrer">github.com/bobbylkchao/ai-phone-agent</a></p>
+        </div>
     </div>
 </section>
 
@@ -93,25 +145,20 @@
     <h2>Experience</h2>
     <div class="experience">
         <div class="job">
-					<h3>Technical Lead | Priceline.com</h3>
-					<span>Jan 2022 - Present | Winnipeg, Canada</span>
-					<p>Architected and built foundational systems from scratch as one of the first technical leaders, defining technology vision and architecture to enable long-term scalability and business growth. Proactively explore emerging technologies, such as GenAI, to identify opportunities for enhancing products and driving business outcomes. Lead the engineering team to achieve technical objectives, ensuring high-performance, scalable, and reliable systems through hands-on guidance, strategic refactoring, and performance/security analysis. Drive technical evolution within the organization, facilitating high-level technical discussions and knowledge-sharing with senior engineers and leadership to shape the company's technology direction.</p>
+            <h3>Technical Lead | Priceline.com - Canada</h3>
+            <span>Jan 2022 - Present</span>
+            <p>Architected and built foundational systems from scratch as one of the first technical leaders, defining technology vision and architecture to enable long-term scalability and business growth. Proactively explore emerging technologies, such as GenAI, to identify opportunities for enhancing products and driving business outcomes. Lead the engineering team to achieve technical objectives, ensuring high-performance, scalable, and reliable systems through hands-on guidance, strategic refactoring, and performance/security analysis. Drive technical evolution within the organization, facilitating high-level technical discussions and knowledge-sharing with senior engineers and leadership to shape the company's technology direction.</p>
         </div>
         <div class="job">
-					<h3>Development & Technical Manager | CBRLife Media</h3>
-					<span>Nov 2018 - Jan 2022</span>
-					<p>Led architecture and development of a distributed mobile platform serving millions of users globally, ensuring scalability, high availability, and performance during growth.</p>
+            <h3>Development & Technical Manager</h3>
+            <span>Nov 2018 - Jan 2022</span>
+            <p>Led architecture and development of a distributed mobile platform serving millions of users globally, ensuring scalability, high availability, and performance during growth.</p>
         </div>
         <div class="job">
-					<h3>Technical Lead → Development & Technical Manager | Xcloud Game</h3>
-					<span>Apr 2015 - Nov 2018</span>
-					<p>Designed backend systems for 1M+ DAU, built distributed architecture across 4 global data centers, and led cross-functional teams to deliver reliable game services.</p>
+            <h3>Technical Lead / Development Manager</h3>
+            <span>Apr 2015 - Nov 2018</span>
+            <p>Designed backend systems for 1M+ DAU, built distributed architecture across 4 global data centers, and led cross-functional teams to deliver reliable game services.</p>
         </div>
-        <div class="job">
-					<h3>Software Engineer → Technical Lead | Hewlett-Packard (HP)</h3>
-					<span>Sep 2011 - Apr 2015</span>
-					<p>Participated in the development of enterprise web applications on Oracle, WebLogic, and HP-UX. Managed technical relationships with clients, provided tailored development solutions, and translated business needs into scalable technical implementations across multiple projects.</p>
-				</div>
     </div>
 </section>
 
@@ -119,20 +166,23 @@
     <h2>Expertise & Value</h2>
     <div class="skills">
         <div class="skills-list">
+            <div class="skill">AI Application Architecture</div>
+            <div class="skill">Agent &amp; Tool Orchestration</div>
+            <div class="skill">LLM Integration</div>
+            <div class="skill">Real-time Voice &amp; Telephony</div>
             <div class="skill">System Architecture</div>
             <div class="skill">Microservices</div>
             <div class="skill">Event-driven Architecture</div>
             <div class="skill">Scalable API Design</div>
             <div class="skill">Node.js</div>
-            <div class="skill">React / React Native</div>
             <div class="skill">TypeScript</div>
+            <div class="skill">React / React Native</div>
             <div class="skill">GCP / AWS</div>
             <div class="skill">Docker & Kubernetes</div>
             <div class="skill">CI/CD</div>
             <div class="skill">Message Queues (Kafka, AWS SQS)</div>
             <div class="skill">Amazon Connect</div>
             <div class="skill">BigQuery</div>
-            <div class="skill">GenAI Integration</div>
             <div class="skill">Performance & Security Analysis</div>
             <div class="skill">Mentoring & Leadership</div>
         </div>
@@ -140,7 +190,7 @@
 </section>
 
 <footer>
-    &copy; 2025 Bobby Chao | <a href="mailto:bobbylkchao@gmail.com">bobbylkchao@gmail.com</a>
+    &copy; 2026 Bobby Chao | <a href="mailto:bobbylkchao@gmail.com">bobbylkchao@gmail.com</a>
 </footer>
 
 <script>
