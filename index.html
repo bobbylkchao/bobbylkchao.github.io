@@ -5,267 +5,1063 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bobby Chao | Technical Lead &amp; AI Systems Architect</title>
 
-<!-- SEO Meta Tags -->
-<meta name="description" content="Bobby Chao — AI Systems Architect & Technical Lead. 15+ years designing scalable systems; focus on AI agents, LLM orchestration, real-time voice, and production AI platforms. Creator of the open-source AI Phone Agent.">
-<meta name="keywords" content="Bobby Chao, Technical Lead, Systems Architect, AI Agents, LLM Orchestration, Voice AI, OpenAI Realtime, AI Phone Agent, Microservices, AWS, GCP, Production AI">
+<!-- SEO -->
+<meta name="description" content="Bobby Chao — AI Systems Architect &amp; Technical Lead. 15+ years designing scalable systems; focus on AI agents, LLM orchestration, real-time voice, and production AI platforms. Creator of the open-source AI Phone Agent.">
+<meta name="keywords" content="Bobby Chao, Technical Lead, Systems Architect, AI Agents, LLM Orchestration, Voice AI, OpenAI Realtime, Amazon Connect, CCaaS, AI Phone Agent, Microservices, AWS, GCP">
 <meta name="author" content="Bobby Chao">
+<meta name="theme-color" content="#05070a">
+<link rel="canonical" href="https://www.bobbylkchao.com/">
 
-<!-- Open Graph / Social Share -->
-<meta property="og:title" content="Bobby Chao | Technical Lead & AI Systems Architect">
-<meta property="og:description" content="Building production-grade AI platforms: agent architectures, LLM orchestration, real-time voice. Creator of AI Phone Agent — open-source voice agents for Twilio & Amazon Connect.">
-<meta property="og:type" content="website">
+<!-- Open Graph -->
+<meta property="og:title" content="Bobby Chao | Technical Lead &amp; AI Systems Architect">
+<meta property="og:description" content="Building production-grade AI platforms: agent architectures, LLM orchestration, and real-time voice. Creator of AI Phone Agent — an open-source starter kit for Amazon Connect and OpenAI Realtime.">
+<meta property="og:type" content="profile">
 <meta property="og:url" content="https://www.bobbylkchao.com/">
+<meta property="og:image" content="https://github.com/bobbylkchao.png?size=460">
+<meta property="profile:first_name" content="Bobby">
+<meta property="profile:last_name" content="Chao">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Bobby Chao | Technical Lead & AI Systems Architect">
-<meta name="twitter:description" content="AI Systems Architect: agents, LLM orchestration, real-time voice. Open-source AI Phone Agent for production telephony + OpenAI Realtime.">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Bobby Chao | Technical Lead &amp; AI Systems Architect">
+<meta name="twitter:description" content="AI Systems Architect: agents, LLM orchestration, and real-time voice. Creator of the open-source AI Phone Agent.">
+<meta name="twitter:image" content="https://github.com/bobbylkchao.png?size=460">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Bobby Chao",
+  "url": "https://www.bobbylkchao.com/",
+  "image": "https://github.com/bobbylkchao.png?size=460",
+  "jobTitle": "Technical Lead & AI Systems Architect",
+  "email": "mailto:bobbylkchao@gmail.com",
+  "description": "AI systems architect and technical lead with 15+ years designing and scaling complex, high-performance systems. Focused on AI agents, LLM orchestration, and real-time voice. Creator of the open-source AI Phone Agent.",
+  "worksFor": { "@type": "Organization", "name": "Priceline.com" },
+  "knowsAbout": [
+    "AI Application Architecture", "AI Agents", "LLM Orchestration", "Model Context Protocol",
+    "Real-time Voice AI", "OpenAI Realtime API", "Amazon Connect", "CCaaS", "SIP",
+    "Contact Center Technology", "Phone Sales", "Online Travel",
+    "Distributed Systems", "Microservices", "Event-driven Architecture", "Node.js", "TypeScript", "AWS", "GCP"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/bobbylkchao/",
+    "https://github.com/bobbylkchao/",
+    "https://github.com/bobbylkchao/ai-phone-agent"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-    body { background: #0d0d0d; color: #f0f0f0; scroll-behavior: smooth; overflow-x: hidden; }
+:root {
+    --bg: #05070a;
+    --line: rgba(255,255,255,.08);
+    --line-strong: rgba(255,255,255,.15);
+    --text: #eef2f6;
+    --muted: #9aa6b5;
+    --dim: #6b7787;
+    --accent: #22e3c3;
+    --accent-2: #7b8cff;
+    --glow: rgba(34,227,195,.35);
+    --radius: 18px;
+    --maxw: 1060px;
+    --ease: cubic-bezier(.22,.68,.32,1);
+    --glass: rgba(10,14,20,.55);
+}
 
-    canvas#particles { position: fixed; top:0; left:0; width:100%; height:100%; z-index:-1; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; font-size: 17.5px; }
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 1.04rem; line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+::selection { background: var(--accent); color: #04120f; }
+section { scroll-margin-top: 90px; }
 
-    .container { width: 90%; max-width: 1000px; margin: auto; padding: 50px 0; }
+/* ---------- webgl stage ---------- */
+#stage {
+    position: fixed; inset: 0; z-index: -3;
+    display: block; width: 100%; height: 100%;
+}
+/* fallback gradient + vignette so the page never looks broken without WebGL */
+.backdrop {
+    position: fixed; inset: 0; z-index: -4; pointer-events: none;
+    background:
+        radial-gradient(60vw 60vw at 12% 8%, rgba(34,227,195,.12), transparent 60%),
+        radial-gradient(55vw 55vw at 88% 92%, rgba(123,140,255,.10), transparent 60%),
+        var(--bg);
+}
+.vignette {
+    position: fixed; inset: 0; z-index: -2; pointer-events: none;
+    background: radial-gradient(ellipse 120% 85% at 50% 50%, transparent 45%, rgba(5,7,10,.72) 100%);
+}
+.grain {
+    position: fixed; inset: -120%; z-index: -1; pointer-events: none;
+    opacity: .14; mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+    animation: grain-shift 7s steps(6) infinite;
+}
+@keyframes grain-shift {
+    0%{transform:translate3d(0,0,0)} 16%{transform:translate3d(-2%,-3%,0)} 33%{transform:translate3d(3%,-2%,0)}
+    50%{transform:translate3d(-3%,2%,0)} 66%{transform:translate3d(2%,3%,0)} 83%{transform:translate3d(-2%,1%,0)} 100%{transform:translate3d(0,0,0)}
+}
 
-    header { text-align: center; padding: 150px 20px 50px; position: relative; z-index:1; }
-    header h1 { font-size: 3rem; color: #00ffff; letter-spacing: 2px; text-shadow: 0 0 20px #00ffff; }
-    header p { font-size: 1.2rem; color: #ccc; margin-top: 10px; }
-    .social-links { margin-top: 20px; }
-    .social-links a { margin: 0 10px; color: #00ffff; font-size: 1.5rem; transition: 0.3s; }
-    .social-links a:hover { color: #fff; transform: scale(1.2); }
+/* ---------- boot loader ---------- */
+#boot {
+    position: fixed; inset: 0; z-index: 200;
+    display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 18px;
+    background: var(--bg);
+    transition: opacity .9s var(--ease), visibility .9s var(--ease);
+}
+#boot.done { opacity: 0; visibility: hidden; }
+#boot .bar { width: 180px; height: 2px; background: rgba(255,255,255,.1); overflow: hidden; border-radius: 2px; }
+#boot .bar i { display: block; height: 100%; width: 40%; background: linear-gradient(90deg, transparent, var(--accent), transparent); animation: load 1.1s var(--ease) infinite; }
+@keyframes load { from { transform: translateX(-120%); } to { transform: translateX(360%); } }
+#boot span { font-family: 'JetBrains Mono', monospace; font-size: .74rem; letter-spacing: .18em; text-transform: uppercase; color: var(--dim); }
 
-    section { padding: 60px 0; border-top: 1px solid #222; }
-    section h2 { font-size: 2rem; color: #00ffff; margin-bottom: 30px; text-align: center; position: relative; }
-    section h2::after { content:""; width:50px; height:3px; background:#00ffff; display:block; margin:10px auto 0; border-radius:2px; }
+/* ---------- scroll progress + nav ---------- */
+#progress {
+    position: fixed; top: 0; left: 0; height: 2px; width: 0%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    box-shadow: 0 0 14px var(--glow); z-index: 100; will-change: width;
+}
+nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 90;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px max(24px, 5vw);
+    border-bottom: 1px solid transparent;
+    transition: background .4s var(--ease), border-color .4s var(--ease), padding .4s var(--ease);
+}
+nav.stuck {
+    background: rgba(5,7,10,.6);
+    backdrop-filter: blur(18px) saturate(140%); -webkit-backdrop-filter: blur(18px) saturate(140%);
+    border-bottom-color: var(--line); padding-top: 12px; padding-bottom: 12px;
+}
+.brand { font-weight: 700; letter-spacing: -.02em; font-size: 1.05rem; display: inline-flex; align-items: center; }
+.brand span { color: var(--accent); }
+.brand i { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); margin-left: 8px; box-shadow: 0 0 10px var(--glow); animation: breathe 3.4s ease-in-out infinite; }
+@keyframes breathe { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.45;transform:scale(.82)} }
+.nav-links { display: flex; align-items: center; gap: 26px; font-size: .93rem; }
+.nav-links a { color: var(--muted); transition: color .25s var(--ease); position: relative; }
+.nav-links a:hover { color: var(--text); }
+.nav-links a.section-link::after {
+    content:""; position:absolute; left:0; right:0; bottom:-7px; height:1px; background: var(--accent);
+    transform: scaleX(0); transform-origin: left; transition: transform .35s var(--ease);
+}
+.nav-links a.section-link.active { color: var(--text); }
+.nav-links a.section-link.active::after { transform: scaleX(1); }
+@media (max-width: 760px) { .nav-links a.hide-sm { display: none; } }
 
-    .about, .experience, .skills { max-width: 800px; margin: auto; line-height: 1.6; font-size:1.1rem; opacity:0; transform: translateY(30px); transition: all 0.8s ease-out; }
+/* ---------- layout ---------- */
+.wrap { width: 90%; max-width: var(--maxw); margin: 0 auto; }
+section { padding: 110px 0; position: relative; }
+.section-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 40px; }
+.section-head h2 {
+    font-size: clamp(1.5rem, 3.4vw, 2rem); font-weight: 700; letter-spacing: -.03em;
+    text-shadow: 0 2px 22px rgba(5,7,10,.92);
+}
+.section-head .idx {
+    font-family: 'JetBrains Mono', monospace; font-size: .8rem; color: var(--accent); opacity: .85;
+    text-shadow: 0 2px 14px rgba(5,7,10,.92);
+}
+.section-head .rule {
+    flex: 1; height: 1px; background: linear-gradient(90deg, var(--line-strong), transparent);
+    transform: scaleX(0); transform-origin: left; transition: transform 1.1s var(--ease) .15s;
+}
+.reveal.in .rule { transform: scaleX(1); }
 
-    .about.visible, .experience.visible, .skills.visible { opacity:1; transform: translateY(0); }
+/* glass panel keeps text readable on top of the 3D scene */
+.panel {
+    background: var(--glass);
+    backdrop-filter: blur(16px) saturate(130%); -webkit-backdrop-filter: blur(16px) saturate(130%);
+    border: 1px solid var(--line); border-radius: var(--radius);
+    padding: clamp(26px, 3.6vw, 44px);
+    box-shadow: 0 24px 70px -40px rgba(0,0,0,.9);
+}
 
-    header .tagline-main {
-        font-size: 1.2rem;
-        color: #e0e0e0;
-        margin-top: 14px;
-        line-height: 1.55;
-        max-width: 920px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0 12px;
-        font-weight: 500;
-        letter-spacing: 0.02em;
-    }
-    @media (max-width: 640px) {
-        header .tagline-main { font-size: 1rem; line-height: 1.5; }
-    }
+/* ---------- hero ---------- */
+.hero { min-height: 100svh; display: flex; flex-direction: column; justify-content: center; padding: 130px 0 80px; position: relative; }
+/* scrim: holds the copy legible over the particle field without hiding the scene */
+.hero::before {
+    content: ""; position: absolute; inset: -10% -5%; z-index: -1; pointer-events: none;
+    background:
+        linear-gradient(100deg, rgba(5,7,10,.94) 0%, rgba(5,7,10,.86) 38%, rgba(5,7,10,.45) 62%, rgba(5,7,10,0) 85%),
+        radial-gradient(70% 55% at 30% 48%, rgba(5,7,10,.8), transparent 70%);
+}
+@media (max-width: 900px) {
+    .hero::before { background: linear-gradient(180deg, rgba(5,7,10,.9) 0%, rgba(5,7,10,.8) 60%, rgba(5,7,10,.35) 100%); }
+}
+.hero .wrap { will-change: transform, opacity; }
+.eyebrow {
+    font-family: 'JetBrains Mono', monospace; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 20px; display: inline-flex; align-items: center; gap: 10px;
+}
+.eyebrow::before { content:""; width: 26px; height: 1px; background: var(--accent); opacity: .6; }
+.hero h1 {
+    font-size: clamp(2.9rem, 9.5vw, 6rem); font-weight: 800; letter-spacing: -.05em; line-height: .99;
+    padding-bottom: .06em;
+    background: linear-gradient(135deg, #fff 20%, var(--accent) 62%, var(--accent-2) 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    animation: sheen 9s ease-in-out infinite;
+    text-shadow: 0 0 80px rgba(34,227,195,.25);
+}
+@keyframes sheen { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
+.hero .role {
+    margin-top: 22px; max-width: 720px; font-size: clamp(1.05rem, 2.2vw, 1.45rem);
+    font-weight: 600; letter-spacing: -.02em;
+    text-shadow: 0 2px 24px rgba(5,7,10,.95), 0 1px 4px rgba(5,7,10,.9);
+}
+.hero .lede {
+    margin-top: 16px; max-width: 660px; color: #b3bfcd; font-size: clamp(1rem, 1.55vw, 1.08rem);
+    text-shadow: 0 2px 20px rgba(5,7,10,.95), 0 1px 4px rgba(5,7,10,.9);
+}
+.hero .lede strong { color: var(--text); font-weight: 600; }
+.hero .eyebrow, .hero .scroll-hint { text-shadow: 0 2px 16px rgba(5,7,10,.95); }
 
-    .about p { margin-bottom: 1em; }
-    .about p:last-of-type { margin-bottom: 0; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+.btn {
+    position: relative; overflow: hidden;
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 13px 22px; border-radius: 999px; font-size: .95rem; font-weight: 600;
+    border: 1px solid var(--line-strong); color: var(--text);
+    background: rgba(10,14,20,.4); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    transition: transform .25s var(--ease), border-color .25s var(--ease), background .25s var(--ease), box-shadow .25s var(--ease);
+}
+.btn:hover { transform: translateY(-2px); border-color: var(--accent); background: rgba(34,227,195,.08); }
+.btn-primary { background: var(--accent); color: #04120f; border-color: var(--accent); box-shadow: 0 8px 30px -12px var(--glow); }
+.btn-primary:hover { background: var(--accent); box-shadow: 0 16px 44px -12px var(--glow); }
+.btn::after {
+    content:""; position:absolute; top:0; bottom:0; left:-60%; width:45%;
+    background: linear-gradient(100deg, transparent, rgba(255,255,255,.22), transparent);
+    transform: skewX(-18deg); opacity: 0;
+}
+.btn:hover::after { animation: sweep .75s var(--ease); }
+@keyframes sweep { 0%{left:-60%;opacity:1} 100%{left:120%;opacity:0} }
 
-    .project-highlight {
-        margin-top: 28px;
-        padding: 22px 26px;
-        background: #111;
-        border: 1px solid rgba(0, 255, 255, 0.35);
-        border-radius: 12px;
-        border-left: 4px solid #00ffff;
-        text-align: left;
-    }
-    .project-highlight h3 {
-        color: #00ffff;
-        font-size: 1.15rem;
-        margin-bottom: 12px;
-        font-weight: 600;
-    }
-    .project-highlight p { margin-bottom: 0.85em; }
-    .project-highlight p:last-child { margin-bottom: 0; }
-    .project-highlight a {
-        color: #00ffff;
-        text-decoration: none;
-        font-weight: 600;
-        border-bottom: 1px solid rgba(0, 255, 255, 0.5);
-        transition: color 0.2s, border-color 0.2s;
-    }
-    .project-highlight a:hover { color: #fff; border-bottom-color: #fff; }
+.scroll-hint {
+    margin-top: 60px; font-family: 'JetBrains Mono', monospace; font-size: .74rem;
+    letter-spacing: .1em; text-transform: uppercase; color: var(--dim);
+    display: inline-flex; align-items: center; gap: 10px; transition: color .25s var(--ease);
+}
+.scroll-hint:hover { color: var(--accent); }
+.scroll-hint i { animation: bob 2.2s ease-in-out infinite; }
+@keyframes bob { 0%,100%{transform:translateY(0)} 50%{transform:translateY(4px)} }
 
-    .job { margin-bottom: 30px; }
-    .job h3 { color: #fff; font-size: 1.3rem; }
-    .job span { color: #00cccc; font-size: 0.9rem; }
+/* formation readout — tells you what the 3D scene is doing */
+.readout {
+    position: fixed; right: max(20px, 4vw); bottom: 26px; z-index: 80;
+    font-family: 'JetBrains Mono', monospace; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--dim); display: flex; align-items: center; gap: 10px;
+    opacity: 0; transition: opacity .6s var(--ease);
+}
+.readout.on { opacity: 1; }
+.readout b { color: var(--accent); font-weight: 500; }
+.readout .ring { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px var(--glow); }
+@media (max-width: 760px) { .readout { display: none; } }
 
-    .skills-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px; }
-    .skill { background: #111; border: 1px solid #00ffff; padding: 10px 20px; border-radius: 20px; cursor: default; animation: float 4s ease-in-out infinite; transition: 0.3s; }
-    .skill:hover { background: #00ffff; color: #0d0d0d; transform: scale(1.2) rotate(5deg); box-shadow: 0 0 15px #00ffff; }
+/* ---------- cursor spotlight ---------- */
+.spot { position: relative; isolation: isolate; }
+.spot::before {
+    content:""; position:absolute; inset:0; border-radius: inherit;
+    background: radial-gradient(340px circle at var(--mx,50%) var(--my,50%), rgba(34,227,195,.13), transparent 62%);
+    opacity: 0; transition: opacity .35s var(--ease); pointer-events: none; z-index: -1;
+}
+.spot:hover::before { opacity: 1; }
 
-    @keyframes float { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-5px);} }
+/* ---------- about ---------- */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 38px; }
+@media (max-width: 820px) { .about-grid { grid-template-columns: 1fr; gap: 20px; } }
+.about-grid p { color: var(--muted); margin-bottom: 1.1em; }
+.about-grid p:last-child { margin-bottom: 0; }
+.about-grid strong { color: var(--text); font-weight: 600; }
 
-    footer { text-align: center; padding: 40px 0; color: #555; font-size: 0.9rem; }
-    footer a {
-      color: #555;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    footer a:hover {
-      color: #fff;
-      text-shadow: 0 0 10px #00ffff;
-      transform: scale(1.1);
-    }
+/* ---------- project ---------- */
+.project { margin-top: 26px; overflow: hidden; transition: border-color .3s var(--ease); }
+.project:hover { border-color: rgba(34,227,195,.42); }
+.project::after {
+    content:""; position:absolute; top:0; left:0; right:0; height:1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: .55;
+}
+.project .kicker { font-family: 'JetBrains Mono', monospace; font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+.project h3 { font-size: clamp(1.25rem, 2.6vw, 1.6rem); font-weight: 700; letter-spacing: -.03em; }
+.project p { color: var(--muted); margin-top: 12px; max-width: 720px; }
+.project p strong { color: var(--text); font-weight: 600; }
+.project a.inline { color: var(--accent); border-bottom: 1px solid rgba(34,227,195,.35); transition: border-color .2s, color .2s; }
+.project a.inline:hover { color: #fff; border-bottom-color: #fff; }
+.pill-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.pill {
+    font-family: 'JetBrains Mono', monospace; font-size: .73rem; color: var(--muted);
+    border: 1px solid var(--line); border-radius: 6px; padding: 5px 11px; background: rgba(255,255,255,.02);
+    transition: color .25s var(--ease), border-color .25s var(--ease);
+}
+.project:hover .pill { border-color: rgba(34,227,195,.25); color: #b9c6d4; }
+
+/* ---------- impact ---------- */
+.impact { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+.impact-card {
+    background: var(--glass);
+    backdrop-filter: blur(14px) saturate(130%); -webkit-backdrop-filter: blur(14px) saturate(130%);
+    border: 1px solid var(--line); border-radius: 14px; padding: 24px 26px;
+    transition: border-color .3s var(--ease), transform .35s var(--ease);
+}
+.impact-card:hover { border-color: rgba(34,227,195,.4); transform: translateY(-5px); }
+.impact-card b {
+    display: block; font-size: 1.45rem; font-weight: 700; letter-spacing: -.03em; margin-bottom: 8px;
+    background: linear-gradient(120deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.impact-card p { color: var(--muted); font-size: .96rem; line-height: 1.6; }
+
+/* ---------- timeline ---------- */
+.timeline { position: relative; padding-left: 30px; }
+.timeline::before { content:""; position:absolute; left:5px; top:8px; bottom:8px; width:1px; background: var(--line-strong); }
+.tl-fill {
+    position:absolute; left:5px; top:8px; width:1px; height:0;
+    background: linear-gradient(180deg, var(--accent), var(--accent-2));
+    box-shadow: 0 0 10px var(--glow); will-change: height;
+}
+.entry { position: relative; padding-bottom: 44px; }
+.entry:last-child { padding-bottom: 0; }
+.entry::before {
+    content:""; position:absolute; left:-30px; top:9px; width:11px; height:11px; border-radius:50%;
+    background: var(--bg); border: 2px solid var(--line-strong);
+    transition: border-color .4s var(--ease), box-shadow .4s var(--ease);
+}
+.entry.lit::before { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(34,227,195,.12); }
+.entry .when { font-family: 'JetBrains Mono', monospace; font-size: .76rem; letter-spacing: .06em; color: var(--accent); text-transform: uppercase; }
+.entry h3 { font-size: 1.2rem; font-weight: 650; margin: 7px 0 12px; letter-spacing: -.02em; }
+.entry ul { list-style: none; }
+.entry li { position: relative; padding-left: 20px; margin-bottom: 9px; color: var(--muted); font-size: 1rem; line-height: 1.6; }
+.entry li:last-child { margin-bottom: 0; }
+.entry li::before { content:""; position:absolute; left:2px; top:.72em; width:5px; height:1px; background: var(--accent); opacity:.8; }
+.entry li strong { color: var(--text); font-weight: 600; }
+
+/* ---------- skills ---------- */
+.skill-group { border-top: 1px solid var(--line); padding: 24px 0; display: grid; grid-template-columns: 190px 1fr; gap: 24px; }
+.skill-group:first-child { border-top: 0; padding-top: 0; }
+.skill-group:last-child { padding-bottom: 0; }
+@media (max-width: 720px) { .skill-group { grid-template-columns: 1fr; gap: 12px; } }
+.skill-group h4 {
+    font-family: 'JetBrains Mono', monospace; font-size: .77rem; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--accent); font-weight: 500; padding-top: 5px;
+}
+.tags { display: flex; flex-wrap: wrap; gap: 10px; }
+.tag {
+    border: 1px solid var(--line-strong); border-radius: 999px; padding: 9px 17px;
+    font-size: .92rem; color: var(--muted); cursor: default;
+    opacity: 0; transform: translateY(10px);
+    transition: opacity .5s var(--ease), transform .35s var(--ease), color .25s var(--ease), border-color .25s var(--ease), background .25s var(--ease);
+    transition-delay: calc(var(--i, 0) * 26ms);
+}
+.reveal.in .tag { opacity: 1; transform: none; }
+.tag:hover { color: #04120f; background: var(--accent); border-color: var(--accent); transform: translateY(-3px); transition-delay: 0s; box-shadow: 0 10px 24px -12px var(--glow); }
+
+/* ---------- contact ---------- */
+.contact { text-align: center; padding-bottom: 50px; }
+/* scrim: the lattice formation is densest here, so the copy needs its own backing */
+.contact::before {
+    content: ""; position: absolute; inset: -6% -5%; z-index: -1; pointer-events: none;
+    background: radial-gradient(58% 68% at 50% 46%, rgba(5,7,10,.94) 0%, rgba(5,7,10,.82) 42%, rgba(5,7,10,0) 78%);
+}
+.contact h2 {
+    font-size: clamp(1.6rem, 4vw, 2.3rem); font-weight: 700; letter-spacing: -.03em;
+    text-shadow: 0 2px 28px rgba(5,7,10,.95), 0 1px 4px rgba(5,7,10,.9);
+}
+.contact p {
+    color: #b3bfcd; margin: 14px auto 30px; max-width: 520px;
+    text-shadow: 0 2px 20px rgba(5,7,10,.95), 0 1px 4px rgba(5,7,10,.9);
+}
+.contact .cta-row { justify-content: center; margin-top: 0; }
+
+/* ---------- footer ---------- */
+footer {
+    border-top: 1px solid var(--line); padding: 32px 0 44px; color: var(--dim); font-size: .86rem;
+    background: linear-gradient(180deg, rgba(5,7,10,.75), rgba(5,7,10,.95));
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+}
+footer .wrap { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
+footer a { color: var(--muted); transition: color .2s; }
+footer a:hover { color: var(--accent); }
+.foot-links { display: flex; gap: 20px; }
+
+/* ---------- reveal ---------- */
+.reveal { opacity: 0; transform: translateY(24px); filter: blur(6px); transition: opacity .8s var(--ease), transform .8s var(--ease), filter .8s var(--ease); }
+.reveal.in { opacity: 1; transform: none; filter: none; }
+.hero .reveal { animation: rise 1s var(--ease) both; opacity: 1; transform: none; filter: none; transition: none; }
+.hero .reveal:nth-child(1){animation-delay:.35s} .hero .reveal:nth-child(2){animation-delay:.45s}
+.hero .reveal:nth-child(3){animation-delay:.57s} .hero .reveal:nth-child(4){animation-delay:.67s}
+.hero .reveal:nth-child(5){animation-delay:.77s} .hero .reveal:nth-child(6){animation-delay:.9s}
+@keyframes rise { from { opacity:0; transform: translateY(30px); filter: blur(10px); } to { opacity:1; transform:none; filter: blur(0); } }
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .reveal, .hero .reveal { opacity: 1; transform: none; filter: none; }
+    .tag { opacity: 1; transform: none; }
+    .section-head .rule { transform: scaleX(1); }
+    html { scroll-behavior: auto; }
+    #stage { display: none; }
+}
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<canvas id="particles"></canvas>
+<div class="backdrop"></div>
+<canvas id="stage"></canvas>
+<div class="vignette"></div>
+<div class="grain"></div>
 
-<header>
-    <h1>Bobby Chao</h1>
-    <p class="tagline-main">Technical Lead | Systems Architect | Building AI Agents &amp; Voice Systems | Creator of AI Phone Agent</p>
-    <div class="social-links">
-        <a href="https://www.linkedin.com/in/bobbylkchao/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/bobbylkchao/" target="_blank"><i class="fab fa-github"></i></a>
+<div id="boot">
+    <div class="bar"><i></i></div>
+    <span>Building scene</span>
+</div>
+
+<div id="progress"></div>
+
+<div class="readout" id="readout">
+    <span class="ring"></span> Formation <b id="readout-name">voice field</b>
+</div>
+
+<nav id="nav">
+    <a class="brand" href="#top">bobby<span>.</span>chao<i></i></a>
+    <div class="nav-links">
+        <a class="hide-sm section-link" href="#about">About</a>
+        <a class="hide-sm section-link" href="#impact">Impact</a>
+        <a class="hide-sm section-link" href="#experience">Experience</a>
+        <a class="hide-sm section-link" href="#skills">Expertise</a>
+        <a class="hide-sm section-link" href="#contact">Contact</a>
+        <a href="https://github.com/bobbylkchao/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/bobbylkchao/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+</nav>
+
+<header class="hero" id="top">
+    <div class="wrap">
+        <p class="eyebrow reveal">Technical Lead &middot; AI Systems Architect</p>
+        <h1 class="reveal">Bobby Chao</h1>
+        <p class="role reveal">
+            I architect and build production-grade AI platforms, agent systems, and real-time voice
+            experiences &mdash; pairing technical strategy with hands-on execution.
+        </p>
+        <p class="lede reveal">
+            <strong>15+ years</strong> designing scalable distributed systems, leading engineering teams,
+            and turning emerging technology into products that ship. Creator of the open-source
+            <strong>AI Phone Agent</strong>.
+        </p>
+        <div class="cta-row reveal">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/bobbylkchao/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <!-- Drop resume.pdf next to index.html, then uncomment this button.
+            <a class="btn" href="./resume.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-arrow-down"></i> Résumé</a>
+            -->
+            <a class="btn" href="https://github.com/bobbylkchao/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+            <a class="btn" href="mailto:bobbylkchao@gmail.com"><i class="fas fa-envelope"></i> Email me</a>
+        </div>
+        <div class="reveal">
+            <a class="scroll-hint" href="#about">About me <i class="fas fa-arrow-down"></i></a>
+        </div>
     </div>
 </header>
 
 <section id="about">
-    <h2>About Me</h2>
-    <div class="about">
-        <p>I am an AI systems architect and technical lead with <strong>15+ years</strong> designing and scaling complex, high-performance systems from the ground up. I focus on production-grade platforms that connect solid architecture with real-world delivery — from distributed backends to modern <strong>AI-driven applications</strong>.</p>
-        <p>My recent work centers on <strong>AI application architecture</strong>: agent-based systems, <strong>LLM orchestration</strong>, tool use, and <strong>real-time voice</strong> (telephony-grade latency and reliability). I care about agents that go beyond chat — systems that interpret intent, take action, and run workflows you can ship and operate.</p>
-        <p>I pair deep technical design with hands-on execution, with emphasis on scalability, reliability, and turning emerging AI capabilities into <strong>production-ready</strong> systems. I mentor engineers, lead technical direction, and stay close to the code where it matters.</p>
-        <p>Outside of work, I contribute to volunteer and community initiatives, using technology for positive social impact.</p>
-        <div class="project-highlight">
-            <h3>Open source: AI Phone Agent</h3>
-            <p>I maintain <a href="https://github.com/bobbylkchao/ai-phone-agent" target="_blank" rel="noopener noreferrer">AI Phone Agent</a> — a production-oriented Node.js / TypeScript starter for <strong>real-time voice agents</strong> on real phone calls, built on OpenAI Realtime with <strong>Twilio Media Streams</strong> and <strong>Amazon Connect</strong>. It demonstrates end-to-end patterns: streaming audio, function tools (transfer, hang up, structured intake), optional MCP-backed tools, and operational endpoints for tunnels and monitoring.</p>
-            <p><a href="https://github.com/bobbylkchao/ai-phone-agent" target="_blank" rel="noopener noreferrer">github.com/bobbylkchao/ai-phone-agent</a></p>
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="idx">01</span><h2>About Me</h2><span class="rule"></span>
+        </div>
+        <div class="panel reveal">
+            <div class="about-grid">
+                <div>
+                    <p>I am an AI systems architect and technical lead with <strong>15+ years</strong> designing and scaling complex, high-performance systems from the ground up. I focus on production-grade platforms that connect solid architecture with real-world delivery — from distributed backends to modern <strong>AI-driven applications</strong>.</p>
+                    <p>My recent work centers on <strong>AI application architecture</strong>: agent-based systems, <strong>LLM orchestration</strong>, tool use, and <strong>real-time voice</strong> at telephony-grade latency and reliability. I care about agents that go beyond chat — systems that interpret intent, take action, and run workflows you can ship and operate.</p>
+                </div>
+                <div>
+                    <p>I pair deep technical design with hands-on execution, with emphasis on scalability, reliability, and turning emerging AI capabilities into <strong>production-ready</strong> systems. I mentor engineers, lead technical direction, and stay close to the code where it matters.</p>
+                    <p>Outside of work, I contribute to volunteer and community initiatives, using technology for positive social impact.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel project spot reveal">
+            <p class="kicker">Open source</p>
+            <h3>AI Phone Agent</h3>
+            <p>
+                I maintain <a class="inline" href="https://github.com/bobbylkchao/ai-phone-agent" target="_blank" rel="noopener noreferrer">AI Phone Agent</a>,
+                a ready-to-run <strong>Node.js and TypeScript</strong> starter kit for AI agents that answer real phone
+                calls and talk to customers in real time, built on <strong>Amazon Connect</strong>, <strong>OpenAI SIP</strong>,
+                and the <strong>OpenAI Realtime API</strong>. It handles the incoming-call webhook, call lifecycle, Realtime
+                sideband connection, function tools, human handoff, and a hangup that waits for the agent to finish
+                speaking — so developers can focus on their own prompts and business logic.
+            </p>
+            <p>
+                Dial <a class="inline" href="tel:+18555222348">+1 (855) 522-2348</a> to try the live demo, or read the
+                source at <a class="inline" href="https://github.com/bobbylkchao/ai-phone-agent" target="_blank" rel="noopener noreferrer">github.com/bobbylkchao/ai-phone-agent</a>.
+            </p>
+            <div class="pill-row">
+                <span class="pill">amazon-connect</span>
+                <span class="pill">openai-sip</span>
+                <span class="pill">openai-realtime</span>
+                <span class="pill">typescript</span>
+                <span class="pill">mcp</span>
+                <span class="pill">ccaas</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="impact">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="idx">02</span><h2>Selected Impact</h2><span class="rule"></span>
+        </div>
+        <div class="impact reveal">
+            <div class="impact-card spot">
+                <b>0 &rarr; 1</b>
+                <p>Defined technology vision and built foundational systems from scratch as one of the first technical leaders at Priceline.com Canada.</p>
+            </div>
+            <div class="impact-card spot">
+                <b>CCaaS &times; AI</b>
+                <p>Contact center architecture for phone sales in online travel — from Amazon Connect call flows to AI voice agents handling live customer calls.</p>
+            </div>
+            <div class="impact-card spot">
+                <b>Millions of users</b>
+                <p>Led architecture and development of a distributed mobile platform serving millions of users worldwide through rapid growth.</p>
+            </div>
+            <div class="impact-card spot">
+                <b>Open source</b>
+                <p>Created AI Phone Agent, a starter kit for real-time voice agents on Amazon Connect and the OpenAI Realtime API.</p>
+            </div>
         </div>
     </div>
 </section>
 
 <section id="experience">
-    <h2>Experience</h2>
-    <div class="experience">
-        <div class="job">
-            <h3>Technical Lead | Priceline.com - Canada</h3>
-            <span>Jan 2022 - Present</span>
-            <p>Architected and built foundational systems from scratch as one of the first technical leaders, defining technology vision and architecture to enable long-term scalability and business growth. Proactively explore emerging technologies, such as GenAI, to identify opportunities for enhancing products and driving business outcomes. Lead the engineering team to achieve technical objectives, ensuring high-performance, scalable, and reliable systems through hands-on guidance, strategic refactoring, and performance/security analysis. Drive technical evolution within the organization, facilitating high-level technical discussions and knowledge-sharing with senior engineers and leadership to shape the company's technology direction.</p>
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="idx">03</span><h2>Experience</h2><span class="rule"></span>
         </div>
-        <div class="job">
-            <h3>Development & Technical Manager</h3>
-            <span>Nov 2018 - Jan 2022</span>
-            <p>Led architecture and development of a distributed mobile platform serving millions of users globally, ensuring scalability, high availability, and performance during growth.</p>
-        </div>
-        <div class="job">
-            <h3>Technical Lead / Development Manager</h3>
-            <span>Apr 2015 - Nov 2018</span>
-            <p>Designed backend systems for 1M+ DAU, built distributed architecture across 4 global data centers, and led cross-functional teams to deliver reliable game services.</p>
+        <div class="panel reveal">
+            <div class="timeline">
+                <span class="tl-fill"></span>
+                <div class="entry">
+                    <div class="when">Jan 2022 — Present</div>
+                    <h3>Technical Lead &middot; Priceline.com, Canada</h3>
+                    <ul>
+                        <li>Architected and built <strong>foundational systems from scratch</strong> as one of the first technical leaders, defining the technology vision that enables long-term scalability and business growth.</li>
+                        <li>Lead the engineering team to its technical objectives through hands-on guidance, strategic refactoring, and performance and security analysis.</li>
+                        <li>Explore emerging technologies such as <strong>GenAI</strong> to identify opportunities for enhancing products and driving business outcomes.</li>
+                        <li>Facilitate high-level technical discussions with senior engineers and leadership to shape the company's technology direction.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="when">Nov 2018 — Jan 2022</div>
+                    <h3>Development &amp; Technical Manager</h3>
+                    <ul>
+                        <li>Led architecture and development of a <strong>distributed mobile platform serving millions of users</strong> globally.</li>
+                        <li>Held scalability, high availability, and performance steady throughout rapid growth.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="when">Apr 2015 — Nov 2018</div>
+                    <h3>Technical Lead / Development Manager</h3>
+                    <ul>
+                        <li>Designed backend systems supporting <strong>1M+ daily active users</strong>.</li>
+                        <li>Built distributed architecture across <strong>four global data centers</strong>.</li>
+                        <li>Led cross-functional teams to deliver reliable game services.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <section id="skills">
-    <h2>Expertise & Value</h2>
-    <div class="skills">
-        <div class="skills-list">
-            <div class="skill">AI Application Architecture</div>
-            <div class="skill">Agent &amp; Tool Orchestration</div>
-            <div class="skill">LLM Integration</div>
-            <div class="skill">Real-time Voice &amp; Telephony</div>
-            <div class="skill">System Architecture</div>
-            <div class="skill">Microservices</div>
-            <div class="skill">Event-driven Architecture</div>
-            <div class="skill">Scalable API Design</div>
-            <div class="skill">Node.js</div>
-            <div class="skill">TypeScript</div>
-            <div class="skill">React / React Native</div>
-            <div class="skill">GCP / AWS</div>
-            <div class="skill">Docker & Kubernetes</div>
-            <div class="skill">CI/CD</div>
-            <div class="skill">Message Queues (Kafka, AWS SQS)</div>
-            <div class="skill">Amazon Connect</div>
-            <div class="skill">BigQuery</div>
-            <div class="skill">Performance & Security Analysis</div>
-            <div class="skill">Mentoring & Leadership</div>
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="idx">04</span><h2>Expertise &amp; Value</h2><span class="rule"></span>
+        </div>
+        <div class="panel reveal">
+            <div class="skill-group">
+                <h4>AI &amp; Agents</h4>
+                <div class="tags">
+                    <span class="tag">AI Application Architecture</span>
+                    <span class="tag">Agent &amp; Tool Orchestration</span>
+                    <span class="tag">LLM Integration</span>
+                    <span class="tag">MCP</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h4>Voice &amp; Telephony</h4>
+                <div class="tags">
+                    <span class="tag">Real-time Voice &amp; Telephony</span>
+                    <span class="tag">OpenAI Realtime</span>
+                    <span class="tag">Amazon Connect</span>
+                    <span class="tag">CCaaS</span>
+                    <span class="tag">SIP</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h4>Architecture</h4>
+                <div class="tags">
+                    <span class="tag">System Architecture</span>
+                    <span class="tag">Microservices</span>
+                    <span class="tag">Event-driven Architecture</span>
+                    <span class="tag">Scalable API Design</span>
+                    <span class="tag">Message Queues (Kafka, AWS SQS)</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h4>Platform</h4>
+                <div class="tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">React / React Native</span>
+                    <span class="tag">GCP / AWS</span>
+                    <span class="tag">Docker &amp; Kubernetes</span>
+                    <span class="tag">CI/CD</span>
+                    <span class="tag">BigQuery</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h4>Leadership</h4>
+                <div class="tags">
+                    <span class="tag">Technical Direction</span>
+                    <span class="tag">Performance &amp; Security Analysis</span>
+                    <span class="tag">Mentoring &amp; Leadership</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="wrap reveal">
+        <h2>Let's talk</h2>
+        <p>Always happy to trade notes on AI agents, real-time voice, or system architecture.</p>
+        <div class="cta-row">
+            <a class="btn btn-primary" href="mailto:bobbylkchao@gmail.com"><i class="fas fa-envelope"></i> bobbylkchao@gmail.com</a>
+            <a class="btn" href="https://www.linkedin.com/in/bobbylkchao/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a class="btn" href="https://github.com/bobbylkchao/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
         </div>
     </div>
 </section>
 
 <footer>
-    &copy; 2026 Bobby Chao | <a href="mailto:bobbylkchao@gmail.com">bobbylkchao@gmail.com</a>
+    <div class="wrap">
+        <span>&copy; 2026 Bobby Chao</span>
+        <div class="foot-links">
+            <a href="mailto:bobbylkchao@gmail.com">Email</a>
+            <a href="https://github.com/bobbylkchao/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/bobbylkchao/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </div>
 </footer>
 
+<!-- ===================== DOM interactions (no WebGL dependency) ===================== -->
 <script>
-    // Scroll animation
-    const faders = document.querySelectorAll('.about, .experience, .skills');
-    const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
-    const appearOnScroll = new IntersectionObserver(function(entries, observer){
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
+(function () {
+    'use strict';
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var progress = document.getElementById('progress');
+    var nav = document.getElementById('nav');
+    var heroWrap = document.querySelector('.hero .wrap');
+    var timeline = document.querySelector('.timeline');
+    var tlFill = document.querySelector('.tl-fill');
+    var entries = [].slice.call(document.querySelectorAll('.entry'));
+    var ticking = false;
+
+    function applyScroll() {
+        ticking = false;
+        var y = window.scrollY;
+        var docH = document.documentElement.scrollHeight - window.innerHeight;
+        progress.style.width = (docH > 0 ? (y / docH) * 100 : 0) + '%';
+        nav.classList.toggle('stuck', y > 40);
+
+        if (heroWrap && !reduced) {
+            var p = Math.min(y / window.innerHeight, 1);
+            heroWrap.style.transform = 'translate3d(0,' + (p * 60) + 'px,0)';
+            heroWrap.style.opacity = String(1 - p * 0.85);
+        }
+        if (timeline && tlFill) {
+            var box = timeline.getBoundingClientRect();
+            var anchor = window.innerHeight * 0.62;
+            tlFill.style.height = Math.max(0, Math.min(anchor - box.top, box.height - 16)) + 'px';
+            entries.forEach(function (e) { e.classList.toggle('lit', e.getBoundingClientRect().top < anchor); });
+        }
+    }
+    window.addEventListener('scroll', function () {
+        if (!ticking) { ticking = true; requestAnimationFrame(applyScroll); }
+    }, { passive: true });
+    window.addEventListener('resize', applyScroll);
+    applyScroll();
+
+    var items = document.querySelectorAll('.reveal');
+    if (reduced) {
+        [].forEach.call(items, function (el) { el.classList.add('in'); });
+    } else {
+        var io = new IntersectionObserver(function (obs) {
+            obs.forEach(function (o, i) {
+                if (!o.isIntersecting) return;
+                var el = o.target;
+                setTimeout(function () { el.classList.add('in'); }, i * 90);
+                io.unobserve(el);
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+        [].forEach.call(items, function (el) { io.observe(el); });
+    }
+
+    [].forEach.call(document.querySelectorAll('.tags'), function (group) {
+        [].forEach.call(group.children, function (tag, i) { tag.style.setProperty('--i', i); });
+    });
+
+    var links = [].slice.call(document.querySelectorAll('.nav-links a.section-link'));
+    var spied = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+    var spy = new IntersectionObserver(function (obs) {
+        obs.forEach(function (o) {
+            if (!o.isIntersecting) return;
+            var idx = spied.indexOf(o.target);
+            links.forEach(function (a, i) { a.classList.toggle('active', i === idx); });
         });
-    }, appearOptions);
-    faders.forEach(fader => appearOnScroll.observe(fader));
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    spied.forEach(function (s) { if (s) spy.observe(s); });
 
-    // Particle background with connection lines
-    const canvas = document.getElementById('particles');
-    const ctx = canvas.getContext('2d');
-    let particlesArray = [];
-    const mouse = { x: null, y: null, radius: 100 };
-
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    window.addEventListener('mousemove', e => { mouse.x = e.x; mouse.y = e.y; });
-    window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; initParticles(); });
-
-    class Particle {
-        constructor(){
-            this.x = Math.random()*canvas.width;
-            this.y = Math.random()*canvas.height;
-            this.size = Math.random()*2+1;
-            this.speedX = Math.random()*1-0.5;
-            this.speedY = Math.random()*1-0.5;
-        }
-        update(){ this.x+=this.speedX; this.y+=this.speedY; 
-            if(this.x>canvas.width) this.x=0; if(this.x<0) this.x=canvas.width;
-            if(this.y>canvas.height) this.y=0; if(this.y<0) this.y=canvas.height;
-        }
-        draw(){ ctx.fillStyle='#00ffff'; ctx.beginPath(); ctx.arc(this.x,this.y,this.size,0,Math.PI*2); ctx.fill(); }
+    if (window.matchMedia('(hover: hover)').matches) {
+        [].forEach.call(document.querySelectorAll('.spot'), function (card) {
+            card.addEventListener('pointermove', function (e) {
+                var r = card.getBoundingClientRect();
+                card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+                card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+            });
+        });
     }
 
-    function initParticles(){
-        particlesArray=[];
-        for(let i=0;i<150;i++) particlesArray.push(new Particle());
+    /* if WebGL never boots, don't leave the loader on screen */
+    setTimeout(function () { document.getElementById('boot').classList.add('done'); }, 4000);
+})();
+</script>
+
+<!-- ===================== Three.js scene ===================== -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js"
+  }
+}
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+
+const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const canvas = document.getElementById('stage');
+const boot = document.getElementById('boot');
+const readout = document.getElementById('readout');
+const readoutName = document.getElementById('readout-name');
+
+if (reduced) {
+    boot.classList.add('done');
+} else {
+    try {
+        start();
+    } catch (err) {
+        console.warn('WebGL scene unavailable:', err);
+        canvas.style.display = 'none';
+        boot.classList.add('done');
+    }
+}
+
+function start() {
+    const renderer = new THREE.WebGLRenderer({
+        canvas,
+        antialias: window.devicePixelRatio < 2,
+        alpha: true,
+        powerPreference: 'high-performance'
+    });
+    renderer.setClearColor(0x000000, 0);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.setSize(window.innerWidth, window.innerHeight, false);
+
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.FogExp2(0x05070a, 0.017);
+
+    const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 300);
+    camera.position.set(0, 0, 34);
+
+    const group = new THREE.Group();
+    scene.add(group);
+
+    /* ---------- particle count scales with the device ---------- */
+    const mobile = window.innerWidth < 820;
+    const COUNT = mobile ? 9000 : 22000;
+
+    /* ---------- four formations, one per section of the story ---------- */
+    const p0 = new Float32Array(COUNT * 3); // voice field  — a wide band of sound
+    const p1 = new Float32Array(COUNT * 3); // global sphere — systems at world scale
+    const p2 = new Float32Array(COUNT * 3); // helix        — a career timeline
+    const p3 = new Float32Array(COUNT * 3); // lattice      — structured architecture
+    const seed = new Float32Array(COUNT);
+    const tint = new Float32Array(COUNT);
+
+    const GOLDEN = Math.PI * (3 - Math.sqrt(5));
+    const cols = Math.ceil(Math.sqrt(COUNT * 2.6));
+    const rows = Math.ceil(COUNT / cols);
+    const lat = Math.ceil(Math.cbrt(COUNT));
+
+    for (let i = 0; i < COUNT; i++) {
+        const i3 = i * 3;
+        const t = i / COUNT;
+
+        /* 0 — voice field: a wide, shallow plane that the shader turns into waves */
+        const cx = i % cols, cy = Math.floor(i / cols);
+        p0[i3]     = (cx / cols - 0.5) * 78 + (Math.random() - 0.5) * 0.5;
+        p0[i3 + 1] = (Math.random() - 0.5) * 1.6;
+        p0[i3 + 2] = (cy / rows - 0.5) * 34 + (Math.random() - 0.5) * 0.5;
+
+        /* 1 — sphere: evenly distributed with a fibonacci spiral */
+        const phi = Math.acos(1 - 2 * (i + 0.5) / COUNT);
+        const theta = GOLDEN * i;
+        const r = 13 + (Math.random() - 0.5) * 0.7;
+        p1[i3]     = r * Math.sin(phi) * Math.cos(theta);
+        p1[i3 + 1] = r * Math.cos(phi);
+        p1[i3 + 2] = r * Math.sin(phi) * Math.sin(theta);
+
+        /* 2 — helix: a double strand climbing through time */
+        const turns = 4.2, strand = i % 2 === 0 ? 0 : Math.PI;
+        const a = t * Math.PI * 2 * turns + strand;
+        const hr = 9 + Math.sin(t * Math.PI * 6) * 0.8 + (Math.random() - 0.5) * 0.9;
+        p2[i3]     = Math.cos(a) * hr;
+        p2[i3 + 1] = (t - 0.5) * 44;
+        p2[i3 + 2] = Math.sin(a) * hr;
+
+        /* 3 — lattice: a structured cubic grid */
+        const lx = i % lat, ly = Math.floor(i / lat) % lat, lz = Math.floor(i / (lat * lat));
+        p3[i3]     = (lx / (lat - 1) - 0.5) * 30 + (Math.random() - 0.5) * 0.6;
+        p3[i3 + 1] = (ly / (lat - 1) - 0.5) * 30 + (Math.random() - 0.5) * 0.6;
+        p3[i3 + 2] = (lz / Math.max(lat - 1, 1) - 0.5) * 30 + (Math.random() - 0.5) * 0.6;
+
+        seed[i] = Math.random();
+        tint[i] = Math.random();
     }
 
-    function connectParticles(){
-        for(let a=0;a<particlesArray.length;a++){
-            for(let b=a;b<particlesArray.length;b++){
-                let dx=particlesArray[a].x - particlesArray[b].x;
-                let dy=particlesArray[a].y - particlesArray[b].y;
-                let distance=Math.sqrt(dx*dx + dy*dy);
-                if(distance<120){
-                    ctx.strokeStyle='rgba(0,255,255,'+ (1-distance/120) +')';
-                    ctx.lineWidth=1;
-                    ctx.beginPath();
-                    ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
-                    ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
-                    ctx.stroke();
-                }
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.BufferAttribute(p0.slice(), 3)); // required by three
+    geo.setAttribute('aP0', new THREE.BufferAttribute(p0, 3));
+    geo.setAttribute('aP1', new THREE.BufferAttribute(p1, 3));
+    geo.setAttribute('aP2', new THREE.BufferAttribute(p2, 3));
+    geo.setAttribute('aP3', new THREE.BufferAttribute(p3, 3));
+    geo.setAttribute('aSeed', new THREE.BufferAttribute(seed, 1));
+    geo.setAttribute('aTint', new THREE.BufferAttribute(tint, 1));
+    geo.boundingSphere = new THREE.Sphere(new THREE.Vector3(), 60);
+
+    const uniforms = {
+        uTime:   { value: 0 },
+        uPhase:  { value: 0 },
+        uEnergy: { value: 0 },
+        uSize:   { value: mobile ? 2.2 : 2.8 },
+        uDpr:    { value: renderer.getPixelRatio() },
+        uCyan:   { value: new THREE.Color('#22e3c3') },
+        uViolet: { value: new THREE.Color('#7b8cff') },
+        uWhite:  { value: new THREE.Color('#eaf6ff') }
+    };
+
+    const material = new THREE.ShaderMaterial({
+        uniforms,
+        transparent: true,
+        depthWrite: false,
+        blending: THREE.AdditiveBlending,
+        vertexShader: `
+            attribute vec3 aP0;
+            attribute vec3 aP1;
+            attribute vec3 aP2;
+            attribute vec3 aP3;
+            attribute float aSeed;
+            attribute float aTint;
+
+            uniform float uTime;
+            uniform float uPhase;
+            uniform float uEnergy;
+            uniform float uSize;
+            uniform float uDpr;
+
+            varying float vTint;
+            varying float vFade;
+
+            void main() {
+                // blend between the four formations based on scroll position
+                vec3 pos = aP0;
+                pos = mix(pos, aP1, clamp(uPhase,        0.0, 1.0));
+                pos = mix(pos, aP2, clamp(uPhase - 1.0,  0.0, 1.0));
+                pos = mix(pos, aP3, clamp(uPhase - 2.0,  0.0, 1.0));
+
+                // how much of the "voice field" is still active
+                float voice = 1.0 - clamp(uPhase, 0.0, 1.0);
+
+                // travelling speech wave, strongest while the field formation is showing
+                float wave =
+                    sin(pos.x * 0.13 + uTime * 1.7) * 1.5 +
+                    sin(pos.z * 0.21 - uTime * 1.1) * 0.9 +
+                    sin((pos.x + pos.z) * 0.07 + uTime * 0.6) * 1.8;
+                float envelope = 0.55 + 0.45 * sin(pos.x * 0.03 + uTime * 0.5);
+                pos.y += wave * envelope * (1.6 + uEnergy * 2.2) * voice;
+
+                // drop the field below the headline so it never sits behind the copy
+                pos.y -= 11.0 * voice;
+
+                // gentle organic drift so nothing ever looks frozen
+                float d = uTime * 0.5 + aSeed * 42.0;
+                pos += vec3(sin(d), cos(d * 1.3), sin(d * 0.7)) * (0.34 + uEnergy * 0.5);
+
+                vec4 mv = modelViewMatrix * vec4(pos, 1.0);
+                gl_Position = projectionMatrix * mv;
+
+                float dist = -mv.z;
+                gl_PointSize = uSize * uDpr * (150.0 / max(dist, 1.0)) * (0.55 + aSeed * 0.8);
+
+                vTint = aTint;
+                vFade = clamp(1.0 - (dist - 12.0) / 62.0, 0.05, 1.0);
             }
+        `,
+        fragmentShader: `
+            uniform vec3 uCyan;
+            uniform vec3 uViolet;
+            uniform vec3 uWhite;
+            uniform float uEnergy;
+
+            varying float vTint;
+            varying float vFade;
+
+            void main() {
+                // round, soft-edged sprite
+                vec2 uv = gl_PointCoord - 0.5;
+                float d = length(uv);
+                if (d > 0.5) discard;
+
+                float core = smoothstep(0.5, 0.0, d);
+                float halo = pow(core, 2.4);
+
+                vec3 col = mix(uCyan, uViolet, vTint);
+                col = mix(col, uWhite, halo * 0.32 + uEnergy * 0.15);
+
+                gl_FragColor = vec4(col, halo * vFade * 0.62);
+            }
+        `
+    });
+
+    const points = new THREE.Points(geo, material);
+    group.add(points);
+
+    /* ---------- scroll drives the formation ---------- */
+    const NAMES = ['voice field', 'global systems', 'timeline helix', 'architecture lattice'];
+    const SECTIONS = ['#top', '#impact', '#experience', '#skills'];
+    let anchors = [];
+    let targetPhase = 0, phase = 0;
+    let targetEnergy = 0, energy = 0;
+    let lastScroll = window.scrollY;
+
+    function measure() {
+        anchors = SECTIONS.map(function (sel) {
+            const el = document.querySelector(sel);
+            return el ? el.getBoundingClientRect().top + window.scrollY : 0;
+        });
+    }
+
+    function updatePhase() {
+        const probe = window.scrollY + window.innerHeight * 0.45;
+        let next = 0;
+        for (let i = 0; i < anchors.length - 1; i++) {
+            if (probe >= anchors[i] && probe < anchors[i + 1]) {
+                const span = Math.max(anchors[i + 1] - anchors[i], 1);
+                next = i + (probe - anchors[i]) / span;
+                break;
+            }
+            if (probe >= anchors[anchors.length - 1]) next = anchors.length - 1;
         }
+        targetPhase = Math.max(0, Math.min(next, 3));
+
+        const label = NAMES[Math.round(targetPhase)];
+        if (readoutName.textContent !== label) readoutName.textContent = label;
+        readout.classList.toggle('on', window.scrollY > 60);
+
+        // scrolling pumps energy into the field, then it settles
+        targetEnergy = Math.min(Math.abs(window.scrollY - lastScroll) / 40, 1);
+        lastScroll = window.scrollY;
     }
 
-    function animate(){
-        ctx.clearRect(0,0,canvas.width,canvas.height);
-        particlesArray.forEach(p=>{ p.update(); p.draw(); });
-        connectParticles();
-        requestAnimationFrame(animate);
+    measure();
+    window.addEventListener('scroll', updatePhase, { passive: true });
+    window.addEventListener('resize', function () {
+        measure();
+        renderer.setSize(window.innerWidth, window.innerHeight, false);
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        uniforms.uDpr.value = renderer.getPixelRatio();
+    });
+    setTimeout(measure, 600); // after fonts settle and layout stabilises
+
+    /* ---------- pointer parallax ---------- */
+    const pointer = { x: 0, y: 0, tx: 0, ty: 0 };
+    window.addEventListener('pointermove', function (e) {
+        pointer.tx = (e.clientX / window.innerWidth - 0.5) * 2;
+        pointer.ty = (e.clientY / window.innerHeight - 0.5) * 2;
+    }, { passive: true });
+
+    /* ---------- render loop ---------- */
+    const clock = new THREE.Clock();
+    let running = true;
+
+    function frame() {
+        if (!running) return;
+        requestAnimationFrame(frame);
+
+        const t = clock.getElapsedTime();
+        uniforms.uTime.value = t;
+
+        // critically damped easing keeps morphs smooth instead of snapping
+        phase  += (targetPhase  - phase)  * 0.055;
+        energy += (targetEnergy - energy) * 0.06;
+        targetEnergy *= 0.92;
+        uniforms.uPhase.value = phase;
+        uniforms.uEnergy.value = energy;
+
+        pointer.x += (pointer.tx - pointer.x) * 0.045;
+        pointer.y += (pointer.ty - pointer.y) * 0.045;
+
+        // each formation reads best from a different angle
+        const spin = t * 0.045;
+        group.rotation.y = spin + pointer.x * 0.35;
+        group.rotation.x = Math.sin(t * 0.12) * 0.06 + pointer.y * 0.2;
+
+        // dolly out as the structures grow larger
+        const zoom = 34 + Math.sin(phase * 1.2) * 2.5 + phase * 1.6;
+        camera.position.z += (zoom - camera.position.z) * 0.04;
+        camera.position.y += ((-pointer.y * 2.2) - camera.position.y) * 0.04;
+        camera.lookAt(0, 0, 0);
+
+        renderer.render(scene, camera);
     }
 
-    initParticles();
-    animate();
+    frame();
+    requestAnimationFrame(function () { boot.classList.add('done'); });
+
+    document.addEventListener('visibilitychange', function () {
+        if (document.hidden) {
+            running = false;
+        } else if (!running) {
+            running = true;
+            clock.getDelta();
+            frame();
+        }
+    });
+}
 </script>
 
 </body>

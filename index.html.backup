@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bobby Chao | Technical Lead &amp; AI Systems Architect</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Bobby Chao — AI Systems Architect & Technical Lead. 15+ years designing scalable systems; focus on AI agents, LLM orchestration, real-time voice, and production AI platforms. Creator of the open-source AI Phone Agent.">
+<meta name="keywords" content="Bobby Chao, Technical Lead, Systems Architect, AI Agents, LLM Orchestration, Voice AI, OpenAI Realtime, AI Phone Agent, Microservices, AWS, GCP, Production AI">
+<meta name="author" content="Bobby Chao">
+
+<!-- Open Graph / Social Share -->
+<meta property="og:title" content="Bobby Chao | Technical Lead & AI Systems Architect">
+<meta property="og:description" content="Building production-grade AI platforms: agent architectures, LLM orchestration, and real-time voice. Creator of AI Phone Agent — an open-source starter kit for Amazon Connect and OpenAI Realtime.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.bobbylkchao.com/">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bobby Chao | Technical Lead & AI Systems Architect">
+<meta name="twitter:description" content="AI Systems Architect: agents, LLM orchestration, and real-time voice. Creator of the open-source AI Phone Agent starter kit for Amazon Connect and OpenAI Realtime.">
+
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background: #0d0d0d; color: #f0f0f0; scroll-behavior: smooth; overflow-x: hidden; }
+
+    canvas#particles { position: fixed; top:0; left:0; width:100%; height:100%; z-index:-1; }
+
+    .container { width: 90%; max-width: 1000px; margin: auto; padding: 50px 0; }
+
+    header { text-align: center; padding: 150px 20px 50px; position: relative; z-index:1; }
+    header h1 { font-size: 3rem; color: #00ffff; letter-spacing: 2px; text-shadow: 0 0 20px #00ffff; }
+    header p { font-size: 1.2rem; color: #ccc; margin-top: 10px; }
+    .social-links { margin-top: 20px; }
+    .social-links a { margin: 0 10px; color: #00ffff; font-size: 1.5rem; transition: 0.3s; }
+    .social-links a:hover { color: #fff; transform: scale(1.2); }
+
+    section { padding: 60px 0; border-top: 1px solid #222; }
+    section h2 { font-size: 2rem; color: #00ffff; margin-bottom: 30px; text-align: center; position: relative; }
+    section h2::after { content:""; width:50px; height:3px; background:#00ffff; display:block; margin:10px auto 0; border-radius:2px; }
+
+    .about, .experience, .skills { max-width: 800px; margin: auto; line-height: 1.6; font-size:1.1rem; opacity:0; transform: translateY(30px); transition: all 0.8s ease-out; }
+
+    .about.visible, .experience.visible, .skills.visible { opacity:1; transform: translateY(0); }
+
+    header .tagline-main {
+        font-size: 1.2rem;
+        color: #e0e0e0;
+        margin-top: 14px;
+        line-height: 1.55;
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 12px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+    }
+    @media (max-width: 640px) {
+        header .tagline-main { font-size: 1rem; line-height: 1.5; }
+    }
+
+    .about p { margin-bottom: 1em; }
+    .about p:last-of-type { margin-bottom: 0; }
+
+    .project-highlight {
+        margin-top: 28px;
+        padding: 22px 26px;
+        background: #111;
+        border: 1px solid rgba(0, 255, 255, 0.35);
+        border-radius: 12px;
+        border-left: 4px solid #00ffff;
+        text-align: left;
+    }
+    .project-highlight h3 {
+        color: #00ffff;
+        font-size: 1.15rem;
+        margin-bottom: 12px;
+        font-weight: 600;
+    }
+    .project-highlight p { margin-bottom: 0.85em; }
+    .project-highlight p:last-child { margin-bottom: 0; }
+    .project-highlight a {
+        color: #00ffff;
+        text-decoration: none;
+        font-weight: 600;
+        border-bottom: 1px solid rgba(0, 255, 255, 0.5);
+        transition: color 0.2s, border-color 0.2s;
+    }
+    .project-highlight a:hover { color: #fff; border-bottom-color: #fff; }
+
+    .job { margin-bottom: 30px; }
+    .job h3 { color: #fff; font-size: 1.3rem; }
+    .job span { color: #00cccc; font-size: 0.9rem; }
+
+    .skills-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px; }
+    .skill { background: #111; border: 1px solid #00ffff; padding: 10px 20px; border-radius: 20px; cursor: default; animation: float 4s ease-in-out infinite; transition: 0.3s; }
+    .skill:hover { background: #00ffff; color: #0d0d0d; transform: scale(1.2) rotate(5deg); box-shadow: 0 0 15px #00ffff; }
+
+    @keyframes float { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-5px);} }
+
+    footer { text-align: center; padding: 40px 0; color: #555; font-size: 0.9rem; }
+    footer a {
+      color: #555;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    footer a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #00ffff;
+      transform: scale(1.1);
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<header>
+    <h1>Bobby Chao</h1>
+    <p class="tagline-main">Technical Lead | Systems Architect | Building AI Agents &amp; Voice Systems | Creator of AI Phone Agent</p>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/bobbylkchao/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/bobbylkchao/" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+        <p>I am an AI systems architect and technical lead with <strong>15+ years</strong> designing and scaling complex, high-performance systems from the ground up. I focus on production-grade platforms that connect solid architecture with real-world delivery — from distributed backends to modern <strong>AI-driven applications</strong>.</p>
+        <p>My recent work centers on <strong>AI application architecture</strong>: agent-based systems, <strong>LLM orchestration</strong>, tool use, and <strong>real-time voice</strong> (telephony-grade latency and reliability). I care about agents that go beyond chat — systems that interpret intent, take action, and run workflows you can ship and operate.</p>
+        <p>I pair deep technical design with hands-on execution, with emphasis on scalability, reliability, and turning emerging AI capabilities into <strong>production-ready</strong> systems. I mentor engineers, lead technical direction, and stay close to the code where it matters.</p>
+        <p>Outside of work, I contribute to volunteer and community initiatives, using technology for positive social impact.</p>
+        <div class="project-highlight">
+            <h3>Open source: AI Phone Agent</h3>
+            <p>I maintain <a href="https://github.com/bobbylkchao/ai-phone-agent" target="_blank" rel="noopener noreferrer">AI Phone Agent</a> — a ready-to-run Node.js and TypeScript starter kit for AI agents that answer real phone calls and talk to customers in real time. Built on <strong>Amazon Connect</strong>, <strong>OpenAI SIP</strong>, and the <strong>OpenAI Realtime API</strong>, it handles the incoming-call webhook, call lifecycle, Realtime sideband connection, function tools, human handoff, and clean hangup so developers can focus on their own prompts and business logic.</p>
+            <p>Dial <a href="tel:+18555222348">+1 (855) 522-2348</a> to try the live demo.</p>
+            <p><a href="https://github.com/bobbylkchao/ai-phone-agent" target="_blank" rel="noopener noreferrer">github.com/bobbylkchao/ai-phone-agent</a></p>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="experience">
+        <div class="job">
+            <h3>Technical Lead | Priceline.com - Canada</h3>
+            <span>Jan 2022 - Present</span>
+            <p>Architected and built foundational systems from scratch as one of the first technical leaders, defining technology vision and architecture to enable long-term scalability and business growth. Proactively explore emerging technologies, such as GenAI, to identify opportunities for enhancing products and driving business outcomes. Lead the engineering team to achieve technical objectives, ensuring high-performance, scalable, and reliable systems through hands-on guidance, strategic refactoring, and performance/security analysis. Drive technical evolution within the organization, facilitating high-level technical discussions and knowledge-sharing with senior engineers and leadership to shape the company's technology direction.</p>
+        </div>
+        <div class="job">
+            <h3>Development & Technical Manager</h3>
+            <span>Nov 2018 - Jan 2022</span>
+            <p>Led architecture and development of a distributed mobile platform serving millions of users globally, ensuring scalability, high availability, and performance during growth.</p>
+        </div>
+        <div class="job">
+            <h3>Technical Lead / Development Manager</h3>
+            <span>Apr 2015 - Nov 2018</span>
+            <p>Designed backend systems for 1M+ DAU, built distributed architecture across 4 global data centers, and led cross-functional teams to deliver reliable game services.</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Expertise & Value</h2>
+    <div class="skills">
+        <div class="skills-list">
+            <div class="skill">AI Application Architecture</div>
+            <div class="skill">Agent &amp; Tool Orchestration</div>
+            <div class="skill">LLM Integration</div>
+            <div class="skill">Real-time Voice &amp; Telephony</div>
+            <div class="skill">System Architecture</div>
+            <div class="skill">Microservices</div>
+            <div class="skill">Event-driven Architecture</div>
+            <div class="skill">Scalable API Design</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">TypeScript</div>
+            <div class="skill">React / React Native</div>
+            <div class="skill">GCP / AWS</div>
+            <div class="skill">Docker & Kubernetes</div>
+            <div class="skill">CI/CD</div>
+            <div class="skill">Message Queues (Kafka, AWS SQS)</div>
+            <div class="skill">Amazon Connect</div>
+            <div class="skill">CCaaS</div>
+            <div class="skill">BigQuery</div>
+            <div class="skill">Performance & Security Analysis</div>
+            <div class="skill">Mentoring & Leadership</div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2026 Bobby Chao | <a href="mailto:bobbylkchao@gmail.com">bobbylkchao@gmail.com</a>
+</footer>
+
+<script>
+    // Scroll animation
+    const faders = document.querySelectorAll('.about, .experience, .skills');
+    const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer){
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, appearOptions);
+    faders.forEach(fader => appearOnScroll.observe(fader));
+
+    // Particle background with connection lines
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let particlesArray = [];
+    const mouse = { x: null, y: null, radius: 100 };
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    window.addEventListener('mousemove', e => { mouse.x = e.x; mouse.y = e.y; });
+    window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; initParticles(); });
+
+    class Particle {
+        constructor(){
+            this.x = Math.random()*canvas.width;
+            this.y = Math.random()*canvas.height;
+            this.size = Math.random()*2+1;
+            this.speedX = Math.random()*1-0.5;
+            this.speedY = Math.random()*1-0.5;
+        }
+        update(){ this.x+=this.speedX; this.y+=this.speedY; 
+            if(this.x>canvas.width) this.x=0; if(this.x<0) this.x=canvas.width;
+            if(this.y>canvas.height) this.y=0; if(this.y<0) this.y=canvas.height;
+        }
+        draw(){ ctx.fillStyle='#00ffff'; ctx.beginPath(); ctx.arc(this.x,this.y,this.size,0,Math.PI*2); ctx.fill(); }
+    }
+
+    function initParticles(){
+        particlesArray=[];
+        for(let i=0;i<150;i++) particlesArray.push(new Particle());
+    }
+
+    function connectParticles(){
+        for(let a=0;a<particlesArray.length;a++){
+            for(let b=a;b<particlesArray.length;b++){
+                let dx=particlesArray[a].x - particlesArray[b].x;
+                let dy=particlesArray[a].y - particlesArray[b].y;
+                let distance=Math.sqrt(dx*dx + dy*dy);
+                if(distance<120){
+                    ctx.strokeStyle='rgba(0,255,255,'+ (1-distance/120) +')';
+                    ctx.lineWidth=1;
+                    ctx.beginPath();
+                    ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+                    ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+                    ctx.stroke();
+                }
+            }
+        }
+    }
+
+    function animate(){
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        particlesArray.forEach(p=>{ p.update(); p.draw(); });
+        connectParticles();
+        requestAnimationFrame(animate);
+    }
+
+    initParticles();
+    animate();
+</script>
+
+</body>
+</html>
